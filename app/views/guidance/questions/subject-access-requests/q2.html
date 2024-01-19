@@ -1,0 +1,65 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+   – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="/path/of/next/page" method="post">
+        {% from "govuk/components/radios/macro.njk" import govukRadios %}
+
+{{ govukRadios({
+  name: "whereDoYouLive",
+  fieldset: {
+    legend: {
+      text: "Who is the requester seeking information of?",
+      isPageHeading: true,
+      classes: "govuk-fieldset__legend--l"
+    }
+  },
+
+  items: [
+    {
+      value: "england",
+      text: "Themselves"
+    },
+    {
+      value: "abroad",
+      text: "Someone they have parental responsibility for"
+    },
+    {
+      value: "abroad",
+      text: "Someone they have permission to act on behalf of"
+    },
+    {
+      divider: "or"
+    },
+    {
+      value: "abroad",
+      text: "None of the above"
+    }
+  ]
+}) }}
+{{ govukButton({
+  text: "Continue"
+}) }}
+
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

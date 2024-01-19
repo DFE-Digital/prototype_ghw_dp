@@ -1,0 +1,60 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+   – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+  text: "Back",
+  href: "javascript:window.history.back()"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <form class="form" action="/path/of/next/page" method="post">
+        {{ govukRadios({
+          name: "signIn",
+          fieldset: {
+            legend: {
+              text: "What guidance are you looking for?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          hint: {
+            text: ""
+          },
+          items: [
+            {
+              value: "government-gateway",
+              text: "Someone is requesting information on themselves or someone else",
+              hint: {
+                text: "A parent, carer or individual is requesting information that you hold on them (known as a Subject Access Request or SAR)"
+              }
+            },
+            {
+              value: "govuk-one-login",
+              text: "Data protection when using artificial intelligence (AI)",
+              hint: {
+                text: "safeguarding sensitive information, ensuring privacy, and implementing measures to prevent unauthorised access or misuse of personal data"
+              }
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

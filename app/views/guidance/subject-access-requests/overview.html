@@ -1,0 +1,141 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Overview - Subject access requests (SARs) in the education sector – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Subject access requests (SARs) in the education sector
+    </h1>
+    <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-6">Updated 22nd November 2023</p>
+
+    <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+      <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+          Contents
+        </h2>
+        <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+
+
+            <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              Overview
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="receiving-a-sar">
+                Receiving a SAR
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="check-identity">
+                When to check the identity of someone submitting a SAR
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="requests-from-children">
+                Responding to a request from a child 
+              </a>
+            </li>
+            
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="submitting-a-sar">
+                Ways an individual can submit a SAR
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="dealing-with-a-sar">
+                Dealing with a SAR
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="refusing-a-sar">
+                Refusing to comply with a SAR
+              </a>
+            </li>
+
+            <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+              <a href="recording-a-sar">
+                Recording the SAR process
+              </a>
+            </li>
+
+        </ol>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+    
+    <h2 class="govuk-heading-l" id="using-your-data-to-fund-your-learning-including-apprenticeships">
+      Overview of SARs
+    </h2>
+
+      <p class="govuk-body">A subject access request (SAR) lets individuals access a copy of their personal data held by an organisation.</p>
+      <p class="govuk-body">This guidance is for people working in the education sector who respond to subject access requests. </p>
+      <p class="govuk-body">For general information on SARs, please read <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/when-can-we-refuse-to-comply-with-a-request/" target="_blank">ICO – right of access</a> (opens in a new tab).  </p>
+     
+{{ govukPagination({
+  next: {
+    labelText: "Receiving a SAR",
+    href: "receiving-a-sar"
+  }
+}) }}
+
+    <p>
+      <a href="#">
+        View a printable version of the whole guide
+      </a>
+    </p>
+
+  </div>
+
+  <!-- <div class="govuk-grid-column-one-third sticky">
+    <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Jump to a section
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#using-your-data-to-fund-your-learning-including-apprenticeships">
+              Using your data to fund your learning, including apprenticeships
+            </a>
+          </li>
+          <li>
+            <a href="#using-your-data-to-ensure-the-protection-of-public-funds-by-preventing-and-detecting-fraud">
+              Using your data to ensure the protection of public funds by preventing and detecting fraud
+            </a>
+          </li>
+          <li>
+            <a href="/contact-us">
+              Contact us or make a complaint
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div> -->
+
+</main>
+</div>
+
+{% endblock %}

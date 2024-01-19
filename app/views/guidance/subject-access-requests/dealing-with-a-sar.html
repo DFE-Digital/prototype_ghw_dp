@@ -1,0 +1,307 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Dealing with a SAR - Subject access requests (SARs) in the education sector – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Subject access requests (SARs) in the education sector
+    </h1>
+    <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-6">Updated 22nd November 2023</p>
+
+    <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+      <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+          Contents
+        </h2>
+        <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="overview">
+            Overview
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="receiving-a-sar">
+                Receiving a SAR
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="check-identity">
+              When to check the identity of someone submitting a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="requests-from-children">
+              Responding to a request from a child 
+            </a>
+          </li>
+          
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="submitting-a-sar">
+              Ways an individual can submit a SAR
+            </a>
+          </li>
+
+          <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+            Dealing with a SAR
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="refusing-a-sar">
+              Refusing to comply with a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="recording-a-sar">
+              Recording the SAR process
+            </a>
+          </li>
+
+      </ol>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+    
+    <h2 class="govuk-heading-l" id="dealing-with-a-sar">
+      Dealing with a SAR
+    </h2>
+    <p>What you need to do to after you have received a SAR.</p>
+    <h3 id="timeframes-for-responding-to-a-sar">Timeframes for responding to a SAR</h3>
+    <p>A full SAR response must be sent within 1 calendar month.</p>
+    <p>Time taken to obtain identification and authority can be considered in the deadline.</p>
+    <p>If the request is complex, the response time can be extended by up to 2 calendar months, making the response deadline 3 months in total. The ICO advise that you should respond to the SAR as soon as possible within the extended period.</p>    
+    <p>For complex requests, you must tell the requester the new deadline and the reason their SAR is being treated as complex. You must do this in writing, within 1 calendar month of the original request date.</p>
+    <p><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-should-we-consider-when-responding-to-a-request/#complex" target="_blank">ICO provides guidance on complex requests (opens in a new tab).</a></p>
+    
+    <h3 id="calculating-how-long-you-have-to-respond-to-a-sar">Calculating how long you have to respond to a SAR</h3>
+    <p>Organisations have 1 calendar month to respond to a SAR, starting from the day a SAR is submitted.</p>
+    <p>If you receive a request on the last day of the month and the following month is shorter, a response must be made by the last day of the shorter month.</p>
+    <p>If a SAR is received on 31 January, a response is required by 28 February (29 February in a leap year).</p>
+    <p>If the deadline for a response falls on a weekend or bank holiday, you can respond on the next</p>
+    <p>For example, the deadline for response is 2 May which is a bank holiday, the response deadline becomes 3 May.</p>
+    <p><a href="https://ico.org.uk/for-the-public/time-limits-for-responding-to-data-protection-rights-requests/" target="_blank">Read more about SARs response times on the ICO website (opens in a new tab).</a></p>
+    <p><a href="https://www.timeanddate.com/date/duration.html" target="_blank">Calculate SARs response times using an online duration calculator (opens in a new tab).</a></p>
+
+    <h3 id="delays-to-sar-processing">Delays to SAR processing</h3>
+    <p>Organisations have 1 calendar month to respond to a SAR, starting from the day a SAR is submitted.</p>
+    <p>In some cases, the calendar month response time can be paused if you are unable to progress with the request.</p>
+    <p>You may need to pause the request if:</p>
+    <ul>
+      <li>you are waiting for a requester to confirm their identification</li>
+      <li>you are waiting for the requester to provide evidence of their authority to act on behalf of another individual</li>
+      <li>you are seeking reasonable clarification about the request</li>
+    </ul>
+    <p><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-should-we-consider-when-responding-to-a-request/#:~:text=The%20clock%20only%20stops%20where,the%20format%20of%20the%20response." target="_blank">Read more about delaying a SAR response on the ICO website (opens in a new tab).</a></p> 
+    
+    <h3 id="receiving-a-sar-during-the-school-holidays">Receiving a SAR during the school holidaysReceiving a SAR during the school holidays</h3>
+    <p>If you receive a SAR during the school holidays, you must still respond within 1 calendar month. Education settings cannot extend a SAR response because it is the school holidays.</p>
+    
+    <h3 id="charging-for-a-sar">Charging for a SAR</h3>
+    <p>In most cases, you cannot charge a fee to complete a SAR.</p>
+    <p>You can charge a ’reasonable fee’ for the administrative costs of complying with a request if:</p>
+    <ul>
+      <li>it is manifestly unfounded or excessive</li>
+      <li>an individual requests further copies of their data following a request</li>
+    </ul>
+    <p><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-should-we-consider-when-responding-to-a-request/#fee" target="_blank">Read more about charging a fee on the ICO's website (opens in a new tab).</a></p> 
+    
+    <h3 id="dealing-with-information-already-held-by-the-requester">Dealing with information already held by the requester</h3>
+    <p>If a requester has already seen or has access to information, you do not need to resend this in your response. You will still need to explain that you hold that information and explain why you are not releasing it.</p>
+    <p>You should be able to evidence that the requester has already seen or had access to the information, in case you receive a complaint.</p> 
+    <p>Example of information already held by the requester</p>
+    <div class="govuk-inset-text">
+      <p>A school governor makes a SAR. The school identifies a chain of emails relevant to the SAR. The school governor's email address is included in the recipient list. As the governor already holds a copy of the information, the school doesn't need to include this in their SAR response. The school explains this in their response.</p>
+    </div>
+
+    <h3 id="sending-general-information-as-part-of-the-response">Sending general information as part of the response</h3>
+    <p>Individuals have a right to know how their personal data is being used. An organisation's privacy policy will usually include this information. You should include a link to your organisation's privacy policy in your SAR response.</p>
+    <p>You can include extra or contextual information in a SAR response. You will need to explain that extra information is being provided outside of the requester’s information rights.</p>  
+    <p>Education settings must make reasonable efforts to search through all records, including:</p> 
+    <ul>
+      <li>emails (including those in deleted/trash folders)</li>
+      <li>documents</li>
+      <li>spreadsheets</li>
+      <li>databases</li>
+      <li>record systems</li>
+      <li>CCTV</li>
+      <li>USB sticks/CDs</li>
+      <li>paper records in filing systems</li>
+      <li>instant messages</li>
+    </ul>
+    <p>Good storage and retention policies make it easier to identify personal information.</p> 
+    <p>Moving to a cloud-based system may help you prepare for subject access requests. Cloud-based systems also offer other security benefits. You can find out more information in the <a href="https://www.gov.uk/guidance/meeting-digital-and-technology-standards-in-schools-and-colleges/cloud-solution-standards-for-schools-and-colleges" target="_blank">DfE cloud standards (opens in a new tab).</a></p>  
+
+    <h3 id="redacting-information">Redacting information</h3>
+    <p>Depending on what the requester asks for, you may need to remove some information. This process is known as redacting.</p>
+    <p>In most circumstances, you should redact personal information that identifies anyone other than the data subject. This is known as removing third party information.</p> 
+    <p>It may be appropriate to release third party information, under some circumstances. This decision must be made on a case-by-case basis and you should record any decisions taken on the release of third party information.</p> 
+    <p>Read more on information about other individuals at the ICO's website</p> 
+    <p>You may need to redact information about:</p> 
+    <ul>
+      <li>other pupils</li>
+      <li>other parents</li>
+      <li>staff</li>
+    </ul>  
+    <p>When redacting identifiable information, make sure that redactions cannot be reversed. You should use specific redaction software, such as Adobe Acrobat Pro.</p>
+    <p>Individuals may ask to see CCTV images of themselves or their child. CCTV images contain personal information. Images of other people appearing in CCTV images must be redacted, for example by blurring.</p>
+    <p>You should keep a copy of unredacted and redacted versions of information in case of review.</p> 
+    <p>Example 1 of a SAR response with redacted text:</p>
+    <div class="govuk-inset-text">
+      <p>Ebony Smith’s dad has submitted a SAR requesting Ebony’s behavioural record. </p>
+      <p>The school office’s record reads:</p> 
+      <p>‘Ebony Smith was excluded due to a fight she had with Sajid Khan’.</p> 
+      <p>When the school responds to the SAR, it should read ‘Ebony Smith was excluded due to a fight she had with (REDACTED)’.</p>
+      <p>Although Ebony’s dad might know who the fight was with, the school should not release this information. Ebony’s dad is only entitled to the personal data held about Ebony, not Sajid. </p> 
+    </div>
+    <p>Example 2 of a SAR response with redacted text:</p>
+    <div class="govuk-inset-text">
+      <p>A child has submitted a SAR for all information the school holds about their special educational needs.</p> 
+      <p>The school identifies the child’s personal information is contained in the minutes of a governors meeting.</p> 
+      <p>The child’s personal information in scope of the request amounts to 2 sentences within a 4-page document. The rest of the document is not about the child.</p>
+      <p>A SAR entitles you to access your own personal information but does not entitle you to access full documents. The school extracts the child’s personal information for inclusion in their response. They do not provide the whole document.</p>
+      <p>The school provides the requester with context about where the information is held. The remaining information is out of scope of the SAR and is not released.</p> 
+    </div>
+    
+    <h3 id="dealing-with-information-that-is-no-longer-available">Dealing with information that is no longer available</h3>
+    <p>In some cases, a requester may ask for information you no longer hold. You should respond by telling them the information is no longer held by you.</p> 
+    <p>You can refer the requester to your data retention policy or privacy notice.</p> 
+    <p>For example, a school's data retention policy explains records of trip permission slips are held for a year after the trip has taken place. The school cannot provide permission slips for trips taken more than a year ago.</p> 
+    <p>Another organisation, such as the local authority, may hold the information that's been requested. You can signpost the requester to the relevant organisation where that data may be held.</p>
+
+    <h3 id="sar-response-formats">SAR response formats</h3>
+    <p>Usually, a SAR response will be made in the same format as the request was received.</p> 
+    <p>A written response is preferable, but if you receive a verbal request, you can provide a verbal response if the requester asks for one. You should make a written record of the response.</p> 
+    <p>Make sure you submit the response in a secure way. You may want to submit the response by:</p>
+    <ul>
+      <li>encrypting the document</li>
+      <li>saving the document in a secure workspace</li>
+      <li>using tracked mail for physical documents</li>
+    </ul> 
+    <p>If delivering a response by hand, consider obtaining a signature to confirm receipt.</p>
+
+    <h3 id="making-sure-a-sar-response-is-accessible">Making sure a SAR response is accessible</h3>
+    <p>Education settings should make it simple for individuals who need additional support to make a SAR. You should make sure your response is in an accessible format that meets the needs of the requester.</p> 
+
+
+
+
+
+
+    
+
+{{ govukPagination({
+  previous: {
+    labelText: "Ways an individual can submit a SAR",
+    href: "submitting-a-sar"
+  },
+  next: {
+    labelText: "Refusing to comply with a SAR",
+    href: "refusing-a-sar"
+  }
+}) }}
+
+    <p>
+      <a href="#">
+        View a printable version of the whole guide
+      </a>
+    </p>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third sticky">
+    <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Jump to a section
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#timeframes-for-responding-to-a-sar">
+              Timeframes for responding to a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#calculating-how-long-you-have-to-respond-to-a-sar">
+              Calculating how long you have to respond to a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#delays-to-sar-processing">
+              Delays to SAR processing
+            </a>
+          </li>
+          <li>
+            <a href="#receiving-a-sar-during-the-school-holidays">
+              Receiving a SAR during the school holidays
+            </a>
+          </li>
+          <li>
+            <a href="#charging-for-a-sar">
+              Charging for a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#dealing-with-information-already-held-by-the-requester">
+              Dealing with information already held by the requester
+            </a>
+          </li>
+          <li>
+            <a href="#sending-general-information-as-part-of-the-response">
+              Sending general information as part of the response
+            </a>
+          </li>
+          <li>
+            <a href="#redacting-information">
+              Redacting information
+            </a>
+          </li>
+          <li>
+            <a href="#dealing-with-information-that-is-no-longer-available">
+              Dealing with information that is no longer available
+            </a>
+          </li>
+          <li>
+            <a href="#sar-response-formats">
+              SAR response formats
+            </a>
+          </li>
+          <li>
+            <a href="#making-sure-a-sar-response-is-accessible">
+              Making sure a SAR response is accessible
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              &uarr; Back to the top
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+</main>
+</div>
+
+{% endblock %}

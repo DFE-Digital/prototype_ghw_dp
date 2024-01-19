@@ -1,0 +1,188 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Receiving a SAR - Subject access requests (SARs) in the education sector – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Subject access requests (SARs) in the education sector
+    </h1>
+    <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-6">Updated 22nd November 2023</p>
+
+    <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+      <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+          Contents
+        </h2>
+        <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="overview">
+            Overview
+            </a>
+          </li>
+
+          <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+              Receiving a SAR
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="check-identity">
+              When to check the identity of someone submitting a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="requests-from-children">
+              Responding to a request from a child 
+            </a>
+          </li>
+          
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="submitting-a-sar">
+              Ways an individual can submit a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="dealing-with-a-sar">
+              Dealing with a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="refusing-a-sar">
+              Refusing to comply with a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="recording-a-sar">
+              Recording the SAR process
+            </a>
+          </li>
+
+      </ol>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+    
+    <h2 class="govuk-heading-l" id="receiving-a-subject-access-request">
+      Receiving a Subject Access Request
+    </h2>
+    <h3 id="who-can-make-a-sar">Who can make a SAR and what to do if you receive one</h3>
+    <p>Any individual whose personal data is held by an education setting can make a SAR.</p>
+    <p>Personal data is information that relates to an identified or identifiable individual.</p>
+    <p>In this guidance the person making a SAR is referred to as the requester.</p>
+    <br>
+    <p>When working in an education setting you may receive a SAR from:</p>
+    <ul>
+      <li>students</li>
+      <li>anyone with parental responsibility for a child (either for themselves or on behalf of their child)</li>
+      <li>employees (such as teachers, classroom assistants etc.)</li>
+      <li>volunteers</li>
+      <li>governors</li>
+      <li>third parties acting on behalf of the above</li>
+    </ul>
+
+    <h3 id="information-an-individual-can-request">Information an individual can request</h3>
+    <p>A requester can ask for any personal data that relates to: </p>
+    <ul>
+      <li>themselves</li>
+      <li>someone they have parental responsibility for</li>
+      <li>someone they have permission to act on behalf of</li>
+    </ul>
+    <p>A requester may ask for specific personal information, such as attendance records, school reports or behaviour reports. Some requests will be non-specific and ask for “all the information you hold”.</p>
+    <p>Education settings cannot ask the requester to narrow or reduce their request. They can ask for clarification of what specific information they are looking for. This might be helpful when the requester asks for a lot of information because they are not sure what they need.</p>
+   
+    <h3 id="example-of-clarifying-a-sar">Example of an organisation clarifying a SAR</h3>
+    <p>A college student has received a warning about their attendance. The student decides to submit a SAR. They're not sure what to ask for, so they ask for all the information the college holds on them.<br>The college replies with:</p>
+    
+    <div class="govuk-inset-text">
+      <p>Dear student,<br>We hold a large quantity of personal data about you, including:</p>
+      <ul>
+        <li>your registration details</li>
+        <li>your attendance information</li>
+        <li>data about your courses</li>
+        <li>coursework and examinations</li>
+        <li>all correspondence you have received within 2 years </li>
+      </ul> 
+      <p>We can send you all this data, but if you're wanting specific data then we may be able to retrieve it quicker. Please let us know if you'd like specific information.</p>
+    </div>
+
+    <p>The student replies that they only need attendance information and internal correspondence relating to them.</p>
+    <p>The college has not asked the student to reduce their request. They have made it clear that the student can still have all the information they asked for.</p>
+    <p>The college should record evidence of the student's clarification.</p>
+  
+{{ govukPagination({
+  previous: {
+    labelText: "Overview",
+    href: "overview"
+  },
+  next: {
+    labelText: "When to check the identity of someone submitting a SAR",
+    href: "check-identity"
+  }
+}) }}
+
+    <p>
+      <a href="#">
+        View a printable version of the whole guide
+      </a>
+    </p>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third sticky">
+    <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Jump to a section
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#who-can-make-a-sar">
+              Who can make a SAR and what to do if you receive one
+            </a>
+          </li>
+          <li>
+            <a href="#information-an-individual-can-request">
+              Information an individual can request
+            </a>
+          </li>
+          <li>
+            <a href="#example-of-clarifying-a-sar">
+              Example of an organisation clarifying a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              &uarr; Back to the top
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+</main>
+</div>
+
+{% endblock %}

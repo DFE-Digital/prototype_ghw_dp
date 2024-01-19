@@ -1,0 +1,162 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Responding to a request from a child - Subject access requests (SARs) in the education sector – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Subject access requests (SARs) in the education sector
+    </h1>
+    <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-6">Updated 22nd November 2023</p>
+
+    <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+      <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+          Contents
+        </h2>
+        <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="overview">
+            Overview
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="receiving-a-sar">
+              Receiving a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="check-identity">
+              When to check the identity of someone submitting a SAR
+            </a>
+          </li>
+
+          <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">        
+              Responding to a request from a child 
+          </li>
+          
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="submitting-a-sar">
+              Ways an individual can submit a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="dealing-with-a-sar">
+              Dealing with a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="refusing-a-sar">
+              Refusing to comply with a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="recording-a-sar">
+              Recording the SAR process
+            </a>
+          </li>
+
+      </ol>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+    
+    <h2 class="govuk-heading-l" id="responding-to-a-request-from-a-child">
+      Responding to a request from a child
+    </h2>
+    <p>Requesting a SAR is the child’s right. A child can request access to information about themselves from any education setting that holds data about them. </p>
+    <p>There are no age requirements attached to the right of subject access. In the UK, 12 is considered as the age where young people can exercise their own legal rights.</p>
+    <p>The ICO provides <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/how-do-we-recognise-a-subject-access-request-sar/#children" target="_blank">guidance on the rights of children when requesting SARs</a> (opens in a new tab).</p>
+    <p>If the young person is under 12 and making their own request, you might need to satisfy yourself that they understand what they’re doing, but this shouldn’t be a barrier to supplying them with their information.</p>
+    <p>If the young person is over 12, there’s unlikely to be any reason why you shouldn’t treat the request exactly as you would if an adult made it.</p>
+    <p>Although young people can submit their own subject access requests, parents or guardians can also exercise this right on their behalf. If the young person is 12 or over, check whether they’re happy to authorise the disclosure of their personal data to their parent or guardian.</p>
+    <p>When a child submits a SAR, you should assess if they can understand the information they will receive in response to their request.  </p>
+    <p>If you believe that the child has the maturity and capacity to request and receive the information, you should respond directly to the child.</p>
+    <p>You should not respond directly to the child if you believe they: </p>
+    <ul>
+      <li>do not have the maturity or competence to act independently</li>
+      <li>have a health condition that limits their understanding</li>
+      <li>have given consent for a representative or someone with parental responsibility to act on their behalf</li>
+    </ul>
+    <p>If a child requests a SAR themselves, this demonstrates some maturity and understanding about their right of access their personal information.</p>
+    <p>If schools make the assessment that the child does not demonstrate the required maturity and capacity, they should contact the child and ask if they agree for their parent or guardian to make the request on their behalf.</p>
+    <p>The ICO provides <a href="https://ico.org.uk/for-organisations/advice-for-small-organisations/frequently-asked-questions/right-of-accesssubject-access-requests-and-other-rights/#cana" target="_blank">guidance on SARs from young people</a> (opens in a new tab).</p>   
+
+{{ govukPagination({
+  previous: {
+    labelText: "When to check the identity of someone submitting a SAR",
+    href: "check-identity"
+  },
+  next: {
+    labelText: "Ways an individual can submit a SAR",
+    href: "submitting-a-sar"
+  }
+}) }}
+
+    <p>
+      <a href="#">
+        View a printable version of the whole guide
+      </a>
+    </p>
+
+  </div>
+
+  <!-- <div class="govuk-grid-column-one-third sticky">
+    <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Jump to a section
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#who-can-make-a-sar">
+              Who can make a SAR and what to do if you receive one
+            </a>
+          </li>
+          <li>
+            <a href="#information-an-individual-can-request">
+              Information an individual can request
+            </a>
+          </li>
+          <li>
+            <a href="#example-of-clarifying-a-sar">
+              Example of an organisation clarifying a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              &uarr; Back to the top
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div> -->
+
+</main>
+</div>
+
+{% endblock %}

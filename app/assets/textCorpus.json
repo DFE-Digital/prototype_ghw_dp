@@ -1,0 +1,71 @@
+[
+    {
+        "id": 1,
+        "text": "What is a Subject Access Request (SAR)?",
+        "variations": [
+            "Can you explain what a Subject Access Request (SAR) is?",
+            "I'm not sure, can you define a Subject Access Request (SAR)?",
+            "What does it mean when someone talks about a Subject Access Request (SAR)?",
+            "Could you tell me about Subject Access Requests (SAR)?",
+            "I need help understanding what a Subject Access Request (SAR) is.",
+            "I'm a bit lost, can you provide information on Subject Access Requests (SAR)?",
+            "I'm confused, what exactly is a Subject Access Request (SAR)?",
+            "Sorry, I'm not familiar with it. Can you tell me about Subject Access Requests (SAR)?",
+            "I'm a teacher and don't know much about this. Can you help me understand SAR?",
+            "I need a simple explanation. What is a Subject Access Request (SAR)?"
+        ],
+        "response": "A Subject Access Request (SAR) allows individuals to access a copy of their personal data held by an organization."
+    },
+    {
+        "id": 2,
+        "text": "What information can an individual request in a SAR?",
+        "variations": [
+            "What kind of information can someone ask for in a Subject Access Request (SAR)?",
+            "I'm not sure what to request. What information can I ask for in a SAR?",
+            "Can you help me understand what an individual can request in a SAR?",
+            "I'm a teacher and need to explain this to my students. What can they ask for in a SAR?",
+            "Sorry, I'm new to this. What can an individual ask for in a Subject Access Request (SAR)?",
+            "I'm a bit confused. Can you give examples of what one can request in a SAR?",
+            "I need simple examples. What information is allowed in a Subject Access Request (SAR)?",
+            "I'm seeking guidance. What are the options for information in a SAR?",
+            "Could you simplify it for me? What exactly can someone request in a SAR?",
+            "I need help explaining this to others. What are the possibilities for a SAR request?"
+        ],
+        "response": "A requester can ask for any personal data related to themselves, someone they have parental responsibility for, or someone they have permission to act on behalf of. Requests can be specific or non-specific."
+    },
+    {
+        "id": 3,
+        "text": "What can someone request in a Subject Access Request (SAR)?",
+        "variations": [
+            "I'm not sure what someone is allowed to ask for. What can be requested in a SAR?",
+            "Can you explain what kind of information someone can request in a Subject Access Request (SAR)?",
+            "I need some guidance. What is someone allowed to request in a SAR?",
+            "Sorry, I'm new to this. What information can someone ask for in a Subject Access Request (SAR)?",
+            "I'm confused. Can you give examples of what someone can request in a SAR?",
+            "I need simple examples. What personal data is okay to ask for in a Subject Access Request (SAR)?",
+            "I'm not familiar with the process. Can you tell me what someone can request in a SAR?",
+            "I'm seeking clarification. What options does someone have for information in a SAR?",
+            "Could you simplify it for me? What exactly can someone request in a Subject Access Request (SAR)?",
+            "I need help understanding this. What are the possibilities for someone's request in a SAR?"
+        ] ,
+        "response": "A requester can ask for any personal data that relates to themselves, someone they have parental responsibility for, or someone they have permission to act on behalf of. Requests may include specific personal information like attendance records, school reports, or behavior reports. Some requests can be non-specific, asking for 'all the information you hold'. Education settings cannot ask the requester to narrow or reduce their request, but they can seek clarification on specific information the requester is looking for, which can be helpful when the requester asks for a lot of information without a clear idea of their needs."
+    },
+    {
+        "id": 4,
+        "text": "When should I check the identity of someone submitting a SAR?",
+        "variations": [
+            "I'm not sure when to check someone's identity for a SAR. Can you help?",
+            "Can you explain when I need to verify the identity of someone submitting a SAR?",
+            "I need guidance. When is it necessary to check the identity of someone requesting a SAR?",
+            "Sorry, I'm a bit confused. When should I verify the identity of a SAR requester?",
+            "I'm new to this. Could you tell me when I should check the identity of someone submitting a SAR?",
+            "I'm unsure about the timing. When do I need to check someone's identity for a SAR?",
+            "I need to understand this better. When should the identity of a SAR requester be checked?",
+            "If you could simplify it for me, when is it appropriate to check someone's identity for a SAR?",
+            "I'm seeking clarification. When is it necessary to verify the identity of a SAR requester?",
+            "I'm not familiar with this. Can you explain when I should check the identity of someone submitting a SAR?"
+        ],
+        "response": "In most cases, you will need to ask for identification (ID) from the requester. If the requester is asking for their own information, they will need to provide their identification. Adults should provide a photo ID plus another form of ID, such as their driver's license or passport for the photo ID and a utility bill or council tax bill that confirms their name and address. If the requester is asking for another individual’s information, they will need to provide the individual’s identification and evidence that they have the authority to act on the individual’s behalf. This includes requesters such as parents and solicitors. If you know the requester and are sure of their identity and/or authority, you do not have to request ID. For example, a parent or student who you know well. The data controller is responsible for deciding whether to request ID or not. If standard identification requirements cannot be met, it is the data controller’s decision whether alternative identification is appropriate."
+    }
+    
+]

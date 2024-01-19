@@ -1,20 +1,133 @@
 {% extends "layouts/main.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+ Home – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+      Get help with data protection in schools
     </h1>
 
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
+    <p>The policies and processes schools and multi-academy trusts need to protect personal data and respond effectively to a personal data breach.</p>
+    <p>This service will help school staff, governors and trustees:</p>
+      <ul>
+        <li>understand how to comply with data protection law</li>
+        <li>develop their data policies and processes</li>
+        <li>know what staff and pupil data to keep</li>
+        <li>follow good practices for preventing personal data breaches</li>
+      </ul>
+      <p>This advice is intended for maintained schools and academies. Independent schools are welcome to use it where appropriate.</p>
   </div>
 </div>
 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+<!-- <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-m">
+      Privacy information for pupils, learners and parents
+    </h1>
+
+    <p>
+      Use this service to help you to understand privacy notices and the standards you can expect from the Department for Education (DfE) when we collect, hold or use your personal information.
+    </p>
+
+  </div>
+</div> -->
+
+<div class="dfe-grid-container">
+  <!-- Card 1 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/guidance/subject-access-requests/overview">
+          Subject access requests (SARs) in the education sector
+        </a>
+      </h2>
+      <p>How to recognise and handle information rights requests relating to personal data in your school, including subject access requests.</p>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data protection when using artificial intelligence (AI)
+        </a>
+      </h2>
+      <p>Guidance for anyone who works in an education setting who is using or considering using Generative AI tools.</p>
+    </div>
+  </div>
+  <!-- Card 3 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data retention guidance
+        </a>
+      </h2>
+      <br><p>Find out how to to keep personal data for and how to dispose of data you no longer need.</p>
+    </div>
+  </div>
+  <!-- Card 4 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data Protection and Digital Information Bill (DPDI)
+        </a>
+      </h2>
+      <p>Guidance on changes to to DPDI Bill and how these impact education settings.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+ <!-- Privacy information for pupils, learners and parents -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-m">
+      Contact us or tell us what you think
+    </h1>
+
+    <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nulla augue. Nam quis lorem ac sem placerat porttitor. Cras luctus tempor tortor, ac molestie nisl elementum ut.
+    </p> -->
+
+  </div>
+</div>
+
+<div class="dfe-grid-container">
+  <!-- Card 1 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Contact us
+        </a>
+      </h2>
+      <p>Get in touch for information and advice on data protection in education settings.</p>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Make a suggestion
+        </a>
+      </h2>
+      <p>Tell us what you think about this page to help us improve.</p>
+    </div>
+  </div>
+</div> 
 {% endblock %}

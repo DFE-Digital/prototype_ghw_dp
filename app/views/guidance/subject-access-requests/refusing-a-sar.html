@@ -1,0 +1,225 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+Refusing to comply with a SAR - Subject access requests (SARs) in the education sector – {{ serviceName }}
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">
+      Subject access requests (SARs) in the education sector
+    </h1>
+    <p class="govuk-body govuk-!-font-size-16 govuk-!-margin-bottom-6">Updated 22nd November 2023</p>
+
+    <aside class="govuk-prototype-kit-common-templates-mainstream-guide-contents-list" role="complementary">
+      <nav class="govuk-prototype-kit-common-templates-contents-list" aria-label="Pages in this guide" role="navigation">
+        <h2 class="govuk-prototype-kit-common-templates-contents-list__title">
+          Contents
+        </h2>
+        <ol class="govuk-prototype-kit-common-templates-contents-list__list">
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="overview">
+            Overview
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="receiving-a-sar">
+                Receiving a SAR
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="check-identity">
+              When to check the identity of someone submitting a SAR
+            </a>
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="requests-from-children">
+              Responding to a request from a child 
+            </a>
+          </li>
+          
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="submitting-a-sar">
+              Ways an individual can submit a SAR
+            </a>
+          </li>
+
+
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="dealing-with-a-sar">
+              Dealing with a SAR
+            </a>
+          </li>
+
+          <li aria-current="true" class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed">
+            Refusing to comply with a SAR
+          </li>
+
+          <li class="govuk-prototype-kit-common-templates-contents-list__list-item govuk-prototype-kit-common-templates-contents-list__list-item--dashed govuk-prototype-kit-common-templates-contents-list__list-item--active">
+            <a href="recording-a-sar">
+              Recording the SAR process
+            </a>
+          </li>
+
+      </ol>
+      </nav>
+    </aside>
+
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds govuk-prototype-kit-common-templates-mainstream-guide-body">
+    
+    <h2 class="govuk-heading-l" id="refusing-to-comply-with-a-sar">
+      Refusing to comply with a SAR
+    </h2>
+    <p>Schools can refuse to comply with a SAR wholly or partly if:</p>
+    <ul>
+      <li>an exemption can be applied to withhold some or all the personal information in scope of the request</li>
+      <li>the request is manifestly unfounded or manifestly excessive</li>
+    </ul>
+    <p>Examples of exemptions that may apply to education settings include:</p>
+      <ul>
+        <li>releasing the information would cause serious harm to a child</li>
+        <li>releasing information would not be in the best interests of a child</li>
+        <li>information relating to third parties</li>
+        <li>legal advice sought and received from a lawyer</li>
+        <li>information that may prejudice an investigation</li>
+      </ul>
+      <p>Find out more about exemptions on the <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-other-exemptions-are-there/" target="_blank">ICO website (opens in a new tab).</a></p>
+      
+   
+    <h3 id="manifestly-unfounded-sars">Manifestly unfounded SARs</h3>
+    <p>A full SAR response must be sent within 1 calendar month.</p>
+    <p>A manifestly unfounded SAR is when an individual submits multiple SARs with malicious intentions.</p>  
+    <p>For example, a parent submits a SAR every week with the intention of harassing a staff member following an earlier disagreement. The parent offers to withdraw their SAR for personal benefit.</p>
+    <p>Before refusing to comply with a request on these grounds it is important you can show the reasons why you think a request is not genuine.</p>
+    <p>A request might not be genuine if:</p>
+    <ul>
+      <li>it includes details of an intention to cause disruption</li>
+      <li>it targets an employee with unproven accusations </li>
+    </ul>
+    <p>Read more about manifestly unfounded requests on the <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/when-can-we-refuse-to-comply-with-a-request/#refuse2" target="_blank">ICO website (opens in a new tab).</a></p>
+    
+    <h3 id="manifestly-excessive-sars">Manifestly excessive SARs</h3>
+    <p>A manifestly excessive SAR means that the effort and cost of collecting the information makes responding to the request unreasonable and/or disproportionate.</p> 
+    <p>This is not an easy assessment to make. You will need to consider all the circumstances of the request before making a decision. The ICO provides comprehensive guidance about what factors need to be considered. </p>
+    <p>Read more about manifestly excessive requests on the <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/when-can-we-refuse-to-comply-with-a-request/#refuse3" target="_blank">website (opens in a new tab).</a></p>
+    
+    <h3 id="notifying-a-requester-about-a-refused-sar">Notifying a requester about a refused SAR</h3>
+    <p>You will need to notify a requester that their SAR has been refused within 1 calendar month from the day they made the SAR. You will also need to include the reason for the refusal. The requester should be given details about how to complain to the ICO and/or seek a judicial review.</p>
+
+    <h3 id="example-of-a-school-refusing-a-sar">Example of a school refusing a SAR</h3>
+    <p>A school receives a SAR from the absent parent of a child aged 16. The requester has asked for details of the college they now attend. </p> 
+    <p>This request immediately raises a red flag, that releasing the information may not be in the best interest of the child. Also, if the requester had a relationship with their child, it would be reasonable to expect that they would already know this information. </p>
+    <p>The school acknowledges the SAR and asks the requester to provide:</p>
+    <ul>
+      <li>identification and proof of their link to the child, such as a birth certificate</li>
+      <li>	any parental agreement or court order that may be in place</li>
+    </ul>
+    <p>This is to establish parental responsibility and any restrictions to the requester's parental role.</p>
+    <p>The parent provides their own identification and a copy of the child's birth certificate and states no agreement or court order is in place. This means the school now has the requester ID and parental responsibility status.</p> 
+    <p>The school contacts the child for consent to release the information, as they are aged 12 or over. The school also checks information/records they hold about the child. The child asks the school not to release any of their personal information to the requester. The child states they have no relationship with their absent parent, due to historic emotional abuse towards them and their resident parent. The child feels releasing the requested information would adversely affect their mental health.</p>  
+    <p>The school considers the rights of the parent and those of the child. As there is a risk to the child's wellbeing, they make the decision not to release the child's information.</p> 
+    <p>In this case the child's data protection rights exceed parental rights and the SAR is refused.</p>
+    <p>Please note, education settings may need to be aware of their disclosure obligations under separate legislation. This example applies to a SAR only.</p>
+    
+    <h3 id="complaints-about-a-sar-response">Complaints about a SAR response</h3>
+    <p>A SAR response letter must include the following information:</p>
+    <ul>
+      <li>organisation contact regarding the response, usually the Data Protection Officer</li>
+      <li>details on how to complain to the ICO</li>
+      <li>acknowledgement of their right to seek judicial remedy</li>
+      <li>acknowledgement of their other data protection rights such as right to erasure and right to rectification</li>
+    </ul>
+    <p>If an individual is unhappy with their SAR response, the organisation should offer them the chance for their case to be reviewed.</p>
+    <p>If the individual remains unhappy with the school's response, they can complain to the ICO. The ICO will consider the complaint and contact the school for further information or to provide advice as appropriate.</p> 
+    <p>When an organisation processes a SAR, they should anticipate any future challenge or a formal ICO complaint. Completing a case review record while handling a SAR, which details the school’s rationale and decision making relating to the release of information may serve as a useful tool when responding to complaints.</p>
+    
+    
+
+{{ govukPagination({
+  previous: {
+    labelText: "Dealing with a SAR",
+    href: "dealing-with-a-sar"
+  },
+  next: {
+    labelText: "Recording the SAR process",
+    href: "recording-a-sar"
+  }
+}) }}
+
+    <p>
+      <a href="#">
+        View a printable version of the whole guide
+      </a>
+    </p>
+
+  </div>
+
+  <div class="govuk-grid-column-one-third sticky">
+    <aside class="govuk-prototype-kit-common-templates-related-items" role="complementary">
+      <h2 class="govuk-heading-m" id="subsection-title">
+        Jump to a section
+      </h2>
+      <nav role="navigation" aria-labelledby="subsection-title">
+        <ul class="govuk-list govuk-!-font-size-16">
+          <li>
+            <a href="#refusing-to-comply-with-a-sar">
+              Refusing to comply with a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#manifestly-unfounded-sars">
+              Manifestly unfounded SARs
+            </a>
+          </li>
+          <li>
+            <a href="#manifestly-excessive-sars">
+              Manifestly excessive SARs
+            </a>
+          </li>
+          <li>
+            <a href="#notifying-a-requester-about-a-refused-sar">
+              Notifying a requester about a refused SAR
+            </a>
+          </li>
+          <li>
+            <a href="#example-of-a-school-refusing-a-sar">
+              Example of a school refusing a SAR
+            </a>
+          </li>
+          <li>
+            <a href="#complaints-about-a-sar-response">
+              Complaints about a SAR response
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              &uarr; Back to the top
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+</main>
+</div>
+
+{% endblock %}

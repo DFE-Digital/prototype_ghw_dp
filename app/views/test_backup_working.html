@@ -1,0 +1,116 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<style>
+  body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+  }
+  #chat-container {
+      border: 1px solid #ccc;
+      padding: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+      overflow-y: scroll;
+      max-height: 300px;
+  }
+  #user-input {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+  }
+</style>
+
+<div id="chat-container"></div>
+    <input type="text" id="user-input" placeholder="Type a message..." onkeydown="sendMessage(event)">
+    
+  
+    <script>
+        async function loadJSON(url) {
+            const response = await fetch(url);
+            return response.json();
+        }
+    
+        // Load textCorpus from external file
+        let textCorpus;
+        loadJSON('/public/textCorpus.json')
+            .then(data => {
+                textCorpus = data;
+            })
+            .catch(error => console.error('Error loading textCorpus:', error));
+    
+        // Function to calculate cosine similarity
+        function cosineSimilarity(text1, text2) {
+            const tokenize = (text) => text.toLowerCase().split(/\W+/).filter(Boolean);
+    
+            const vector1 = tokenize(text1);
+            const vector2 = tokenize(text2);
+    
+            const intersection = new Set(vector1.filter(word => vector2.includes(word)));
+    
+            const dotProduct = [...intersection].reduce((acc, word) => acc + vector1.filter(w => w === word).length * vector2.filter(w => w === word).length, 0);
+            const magnitude1 = Math.sqrt(vector1.reduce((acc, word) => acc + Math.pow(vector1.filter(w => w === word).length, 2), 0));
+            const magnitude2 = Math.sqrt(vector2.reduce((acc, word) => acc + Math.pow(vector2.filter(w => w === word).length, 2), 0));
+    
+            return dotProduct / (magnitude1 * magnitude2);
+        }
+    
+        // Function to get the response using cosine similarity and handle variations
+        function getResponse(input) {
+            const similarities = textCorpus.map(entry => ({
+                id: entry.id,
+                similarity: Math.max(...entry.variations.map(variation => cosineSimilarity(input, variation)))
+            }));
+    
+            const maxSimilarity = Math.max(...similarities.map(entry => entry.similarity));
+            const bestMatch = similarities.find(entry => entry.similarity === maxSimilarity);
+    
+            if (bestMatch && maxSimilarity > 0) {
+                return textCorpus.find(entry => entry.id === bestMatch.id).response;
+            } else {
+                // If no direct match, suggest similar questions
+                const suggestedQuestions = textCorpus
+                    .map(entry => entry.variations.map(variation => ({
+                        text: variation,
+                        similarity: cosineSimilarity(input, variation)
+                    })))
+                    .flat()
+                    .sort((a, b) => b.similarity - a.similarity)
+                    .slice(0, 3);
+    
+                const suggestedQuestionsText = suggestedQuestions.map(question => `"${question.text}"`).join(', ');
+    
+                return `I'm sorry, I don't understand. Did you mean ${suggestedQuestionsText}?`;
+            }
+        }
+    
+        // Function to send user message and get response
+        function sendMessage(event) {
+            if (event.key === "Enter") {
+                const userInput = document.getElementById("user-input");
+                const chatContainer = document.getElementById("chat-container");
+    
+                const userMessage = userInput.value.trim();
+                if (userMessage !== "") {
+                    const botResponse = getResponse(userMessage);
+    
+                    // Display user message
+                    chatContainer.innerHTML += `<div>User: ${userMessage}</div>`;
+                    // Display bot response
+                    chatContainer.innerHTML += `<div>Bot: ${botResponse}</div>`;
+    
+                    // Clear input
+                    userInput.value = "";
+    
+                    // Scroll to the bottom of the chat container
+                    chatContainer.scrollTop = chatContainer.scrollHeight;
+                }
+            }
+        }
+    </script>
+
+{% endblock %}
