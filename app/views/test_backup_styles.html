@@ -123,40 +123,36 @@
 
     // Function to get the response using cosine similarity and handle variations
     function getResponse(input) {
-    const similarities = textCorpus.map(entry => ({
-        id: entry.id,
-        similarity: Math.max(...entry.variations.map(variation => cosineSimilarity(input, variation)))
-    }));
+        const similarities = textCorpus.map(entry => ({
+            id: entry.id,
+            similarity: Math.max(...entry.variations.map(variation => cosineSimilarity(input, variation)))
+        }));
 
-    const maxSimilarity = Math.max(...similarities.map(entry => entry.similarity));
-    const bestMatch = similarities.find(entry => entry.similarity === maxSimilarity);
+        const maxSimilarity = Math.max(...similarities.map(entry => entry.similarity));
+        const bestMatch = similarities.find(entry => entry.similarity === maxSimilarity);
 
-    if (bestMatch && maxSimilarity > 0.5) {
-        const responseText = textCorpus.find(entry => entry.id === bestMatch.id).response;
-        return { response: responseText, similarity: maxSimilarity };
-    } else {
-        // If no direct match, suggest different questions
-        const suggestedQuestions = textCorpus
-            .map(entry => ({
-                text: entry.text,  // Change here to use the 'text' field
-                similarity: Math.max(...entry.variations.map(variation => cosineSimilarity(input, variation)))
-            }))
-            .filter(question => question.similarity > 0)  // Remove suggestions with zero similarity
-            .sort((a, b) => b.similarity - a.similarity)
-            .slice(0, 3);
+        if (bestMatch && maxSimilarity > 0.5) {
+            const responseText = textCorpus.find(entry => entry.id === bestMatch.id).response;
+            return { response: responseText, similarity: maxSimilarity };
+        } else {
+            // If no direct match, suggest similar questions
+            const suggestedQuestions = textCorpus
+                .map(entry => entry.variations.map(variation => ({
+                    text: variation,
+                    similarity: cosineSimilarity(input, variation)
+                })))
+                .flat()
+                .sort((a, b) => b.similarity - a.similarity)
+                .slice(0, 3);
 
-        const suggestedQuestionsText = suggestedQuestions.map(question => `"${question.text}"`).join(', ');
+            const suggestedQuestionsText = suggestedQuestions.map(question => `"${question.text}"`).join(', ');
 
-        const responseText = suggestedQuestions.length > 0 ?
-            `I'm sorry, I don't understand. Did you mean ${suggestedQuestionsText}?` :
-            "I'm sorry, I don't understand.";
+            const responseText = `I'm sorry, I don't understand. Did you mean ${suggestedQuestionsText}?`;
+            const maxSimilarityFromSuggestions = suggestedQuestions.length > 0 ? suggestedQuestions[0].similarity : 0;
 
-        const maxSimilarityFromSuggestions = suggestedQuestions.length > 0 ? suggestedQuestions[0].similarity : 0;
-
-        return { response: responseText, similarity: maxSimilarityFromSuggestions };
+            return { response: responseText, similarity: maxSimilarityFromSuggestions };
+        }
     }
-}
-
 
     // Function to send user message and get response
     function sendMessage(event) {
