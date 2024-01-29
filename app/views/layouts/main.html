@@ -7,7 +7,7 @@
 {# 3 #}
 {% block header %}
 {{ header({
-  "showNav": "false",
+  "showNav": "true",
   "showSearch": "true",
   "showUserName": "false",
   "userName": "",
@@ -15,31 +15,22 @@
   "logoPath": "public/images",
   "searchAction": "/search/",
   "searchInputName": "searchterm",
+  "selectedNav": selectedNav,
   "service": {
     "name": "Get help with data protection in schools"
-  }
-})
-}}
-  <!-- {{ header({
-    "showNav": "false",
-    "showSearch": "false",
-    "showUserName": "false",
-    "userName": "",
-    "userNameURL": "",
-    "selectedNav": pageNav,
-    "logoPath": "public/images",
-    "homeHref": "/",
-    "service": {
-      "name": "Get guidance on education data protection"
-    },
-    "primaryLinks": [
-      {
-        "url"  : "",
-        "label" : ""
+  },
+  "primaryLinks": [
+        {
+        "url"  : "/",
+        "label" : "Home"
+      }, {
+        "url"  : "#",
+        "label" : "Ask our Chatbot"
       }
     ]
-  })
-}} -->
+})
+}}
+
 <div class="govuk-width-container">
   {{ govukPhaseBanner({
     tag: {

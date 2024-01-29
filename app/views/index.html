@@ -4,6 +4,8 @@
  Home – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% set selectedNav="Home" %}
+
 {% block content %}
 
 <div class="govuk-grid-row">
@@ -25,7 +27,7 @@
   </div>
 </div>
 
-<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<!-- <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
 
 <div class="govuk-width-container" style="background-color: #1d70b8; padding:40px 40px 0 40px;">
@@ -43,7 +45,7 @@
       </div>
     </div>
   </main>
-</div>
+</div> -->
 
 
 <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
@@ -152,30 +154,6 @@
   </div>
 </div> 
 
-
-<!-- <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-
-
-<div class="govuk-width-container" style="background-color: #1d70b8;">
-
- 
-    <div class="govuk-grid-row govuk-!-margin-0" style="">
-      <p class="govuk-body" style="color: white;float: left;margin-top: 20px;">Did you find this page useful?</p>
-      <div class="govuk-button-group" style="padding: 10px 0px 0px 20px;margin: 0;">
-        <button type="submit" class="govuk-button govuk-button--inverse" data-module="govuk-button">
-          Yes
-        </button>
-        <button type="submit" class="govuk-button govuk-button--inverse" data-module="govuk-button">
-          No
-        </button>
-        <button type="submit" class="govuk-button govuk-button--inverse" data-module="govuk-button">
-          Report a problem with this page
-        </button>
-      </div>
-      
-    </div>
-  
-</div> -->
 
 
 {% endblock %}
