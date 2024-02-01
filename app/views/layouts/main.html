@@ -24,7 +24,7 @@
         "url"  : "/",
         "label" : "Home"
       }, {
-        "url"  : "#",
+        "url"  : "/test",
         "label" : "Ask our Chatbot"
       }
     ]
@@ -39,7 +39,23 @@
     html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
   }) }}
 </div>
+
+<br>
+<div class="govuk-width-container">
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="margin: 0;">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">This prototype is no longer in use.</p>
+  </div>
+</div>
+</div>
 {% endblock %}
+
+
 
 {# 4 #} 
 {% block scripts %}

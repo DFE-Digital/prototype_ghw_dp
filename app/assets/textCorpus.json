@@ -24,7 +24,8 @@
             "I'm confused, what exactly is a Subject Access Request (SAR)?",
             "Sorry, I'm not familiar with it. Can you tell me about Subject Access Requests (SAR)?",
             "I'm a teacher and don't know much about this. Can you help me understand SAR?",
-            "I need a simple explanation. What is a Subject Access Request (SAR)?"
+            "I need a simple explanation. What is a Subject Access Request (SAR)?",
+            "What is the process when someone asks for or requests information?"
         ],
         "response": "A Subject Access Request (SAR) allows individuals to access a copy of their personal data held by an organization."
     },
@@ -76,7 +77,8 @@
             "I need to understand this better. When should the identity (ID) of a SAR requester be checked?",
             "If you could simplify it for me, when is it appropriate to check someone's identity (ID) for a SAR?",
             "I'm seeking clarification. When is it necessary to verify the identity (ID) of a SAR requester?",
-            "I'm not familiar with this. Can you explain when I should check the identity (ID) of someone submitting a SAR?"
+            "I'm not familiar with this. Can you explain when I should check the identity (ID) of someone submitting a SAR?",
+            "When should I check the identity of someone submitting a SAR?"
         ],
         "response": "In most cases, you will need to ask for identification (ID) from the requester. If the requester is asking for their own information, they will need to provide their identification. Adults should provide a photo ID plus another form of ID, such as their driver's license or passport for the photo ID and a utility bill or council tax bill that confirms their name and address. If the requester is asking for another individual’s information, they will need to provide the individual’s identification and evidence that they have the authority to act on the individual’s behalf. This includes requesters such as parents and solicitors. If you know the requester and are sure of their identity and/or authority, you do not have to request ID. For example, a parent or student who you know well. The data controller is responsible for deciding whether to request ID or not. If standard identification requirements cannot be met, it is the data controller’s decision whether alternative identification is appropriate."
     }

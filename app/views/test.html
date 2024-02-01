@@ -4,6 +4,9 @@
   GOV.UK page template – {{ serviceName }} – GOV.UK Prototype Kit
 {% endblock %}
 
+{% set selectedNav="Ask our Chatbot" %}
+
+
 {% block content %}
 <style>
   body {
@@ -77,8 +80,8 @@
         
         </div>
         <div class="govuk-grid-column-one-third">
-          <h3 class="govuk-heading-m">One-third column</h3>
-          <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
+          <h3 class="govuk-heading-m">Related content</h3>
+          <p class="govuk-body">Related content or examples of what to ask the chatbot can go here.<br><br>Examples to try out include:<br><ul><li>What is a Subject Access Request (SAR)?</li><li>What is the process when someone asks for or requests information?</li><li>What kind of information can someone ask for in a Subject Access Request (SAR)?</li><li>When should I check the identity of someone submitting a SAR?</li></ul></p>
         </div>
       </div>
     </main>
@@ -131,7 +134,7 @@
     const maxSimilarity = Math.max(...similarities.map(entry => entry.similarity));
     const bestMatch = similarities.find(entry => entry.similarity === maxSimilarity);
 
-    if (bestMatch && maxSimilarity > 0.5) {
+    if (bestMatch && maxSimilarity > 0.3) {
         const responseText = textCorpus.find(entry => entry.id === bestMatch.id).response;
         return { response: responseText, similarity: maxSimilarity };
     } else {
