@@ -1,0 +1,159 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+ Home – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% set selectedNav="Home" %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+      Get help with data protection in schools
+    </h1>
+
+    <p>The policies and processes schools and multi-academy trusts need to protect personal data and respond effectively to a personal data breach.</p>
+    <p>This service will help school staff, governors and trustees:</p>
+      <ul>
+        <li>understand how to comply with data protection law</li>
+        <li>develop your data policies and processes</li>
+        <li>know what staff and pupil data to keep</li>
+        <li>follow good practices for preventing personal data breaches</li>
+      </ul>
+      <p>This advice is intended for maintained schools and academies. Independent schools are welcome to use it where appropriate.</p>
+  </div>
+</div>
+
+<!-- <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+<div class="govuk-width-container" style="background-color: #1d70b8; padding:40px 40px 0 40px;">
+  <h2 class="govuk-heading-l" style="color: white; margin-bottom: 4px;">What's new?</h2>
+  <p class="govuk-body-s" style="color: white;">23rd January 2024</p>
+  <main class="govuk-main-wrapper" style="padding-top: 10px;">
+    <div class="govuk-grid-row" style="">
+      <div class="govuk-grid-column-two-thirds">
+        <p class="govuk-body" style="color: white;">The most recent guidance on Subject Access Requests (SARs) is now available. This section provides valuable insights to improve your understanding and approach to effectively managing SARs. Our resources offer step-by-step guidance, assisting you in meeting legal obligations and promoting a culture of transparent and accountable data management.</p>        
+        <p class="govuk-body">
+          <a href="/guidance/subject-access-requests/overview" class="govuk-link govuk-link--inverse">Read the new SARs guidance</a>
+        </p>
+      </div>
+      <div class="govuk-grid-column-one-third">
+      </div>
+    </div>
+  </main>
+</div> -->
+
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-m">
+      Guidance library
+    </h1>
+
+    <!-- <p>
+      Use this service to help you to understand privacy notices and the standards you can expect from the Department for Education (DfE) when we collect, hold or use your personal information.
+    </p> -->
+
+  </div>
+</div>
+
+<div class="dfe-grid-container">
+  <!-- Card 1 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="/guidance/subject-access-requests/overview">
+          Subject access requests (SARs) in the education sector
+        </a>
+      </h2>
+      <p>How to recognise and handle information rights requests relating to personal data in your school, including subject access requests.</p>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data protection when using artificial intelligence (AI)
+        </a>
+      </h2>
+      <p>Guidance for anyone who works in an education setting who is using or considering using Generative AI tools.</p>
+    </div>
+  </div>
+  <!-- Card 3 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data retention guidance
+        </a>
+      </h2>
+      <br><p>Find out how to to keep personal data for and how to dispose of data you no longer need.</p>
+    </div>
+  </div>
+  <!-- Card 4 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Data Protection and Digital Information Bill (DPDI)
+        </a>
+      </h2>
+      <p>Guidance on changes to to DPDI Bill and how these impact education settings.</p>
+    </div>
+  </div>
+</div>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+ <!-- Privacy information for pupils, learners and parents -->
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-m">
+      Contact us or tell us what you think
+    </h1>
+
+    <!-- <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis nulla augue. Nam quis lorem ac sem placerat porttitor. Cras luctus tempor tortor, ac molestie nisl elementum ut.
+    </p> -->
+
+  </div>
+</div>
+
+<div class="dfe-grid-container">
+  <!-- Card 1 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Contact us
+        </a>
+      </h2>
+      <p>Get in touch for information and advice on data protection in education settings.</p>
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="dfe-card">
+    <div class="dfe-card-container">
+      <h2 class="govuk-heading-m">
+        <a class="govuk-link govuk-link--no-visited-state dfe-card-link--header" href="#">
+          Make a suggestion
+        </a>
+      </h2>
+      <p>Tell us what you think about this page to help us improve.</p>
+    </div>
+  </div>
+</div> 
+
+
+
+{% endblock %}

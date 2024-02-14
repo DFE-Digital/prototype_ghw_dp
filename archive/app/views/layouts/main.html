@@ -1,0 +1,65 @@
+{# 1 #} 
+{% from 'node_modules/dfe-frontend-alpha/packages/components/header/macro.njk' import header %}
+
+{# 2 #}
+{% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
+
+{# 3 #}
+{% block header %}
+{{ header({
+  "showNav": "true",
+  "showSearch": "true",
+  "showUserName": "false",
+  "userName": "",
+  "userNameURL": "",
+  "logoPath": "public/images",
+  "searchAction": "/search/",
+  "searchInputName": "searchterm",
+  "selectedNav": selectedNav,
+  "service": {
+    "name": "Get help with data protection in schools"
+  },
+  "primaryLinks": [
+        {
+        "url"  : "/",
+        "label" : "Home"
+      }, {
+        "url"  : "/test",
+        "label" : "Ask our Chatbot"
+      }
+    ]
+})
+}}
+
+<div class="govuk-width-container">
+  {{ govukPhaseBanner({
+    tag: {
+      text: "Prototype"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+</div>
+
+<br>
+<div class="govuk-width-container">
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner" style="margin: 0;">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Important
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">This prototype is no longer in use.</p>
+  </div>
+</div>
+</div>
+{% endblock %}
+
+
+
+{# 4 #} 
+{% block scripts %}
+  {{ super() }}
+  <script src="/public/javascripts/dfefrontend.js"></script>
+{% endblock %}
+
