@@ -1,0 +1,655 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – Information rights requests relating to personal data
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <!-- <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Travel abroad</a>
+    </li> -->
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: 7 February 2024 - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #000000;margin: 0;margin-left: -5px;">
+            <svg class="gem-c-search__icon" width="16" height="16" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-3  govuk-!-static-margin-bottom-3" style="font-size: 1rem;"><a href="../" style="color: black;">Contents</a></p>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-6 ">
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-m">Subject access requests (SARs) in the education sector</h1>
+      <!-- <p class="govuk-body-l">How to recognise and handle information rights requests relating to personal data in your school, including subject access requests.</p> -->
+      <p class="govuk-body">A subject access request (SAR) lets individuals access a copy of their personal data held by an organisation. 
+        <br><br>
+        This guidance is for people working in the education sector who respond to subject access requests.
+        <br><br>
+        For general information on SARs, please read <a target="_blank" href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/when-can-we-refuse-to-comply-with-a-request/">ICO – right of access (opens in a new tab)</a>. 
+        </p>
+      
+
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        
+        <!-- Receiving a SAR -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Receiving a SAR
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              Who can make a SAR and what to do if you receive one.
+              <br><br>
+              Any individual whose personal data is held by an education setting can make a SAR. 
+              <br><br>
+              Personal data is information that relates to an identified or identifiable individual. 
+              <br><br>
+              In this guidance the person making a SAR is referred to as the requester.  
+              <br><br>
+              When working in an education setting you may receive a SAR from: 
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>students</li>
+              <li>anyone with parental responsibility for a child (either for themselves or on behalf of their child)</li>
+              <li>employees (such as teachers, classroom assistants etc.)</li>
+              <li>volunteers</li>
+              <li>governors</li>
+              <li>third parties acting on behalf of the above</li>
+            </ul>
+            <h3 class="govuk-heading-s">Information an individual can request</h3>
+            <p class="govuk-body">
+              A requester can ask for any personal data that relates to:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>themselves</li>
+              <li>someone they have parental responsibility for</li>
+              <li>someone they have permission to act on behalf of</li>
+            </ul>
+            <p class="govuk-body">
+            A requester may ask for specific personal information, such as attendance records, school reports or behaviour reports. Some requests will be non-specific and ask for “all the information you hold”. 
+            <br><br>
+            Education settings cannot ask the requester to narrow or reduce their request. They can ask for clarification of what specific information they are looking for. This might be helpful when the requester asks for a lot of information because they are not sure what they need.  
+            </p>
+            <!-- Example block -->
+            <div class="example">
+              <h3 class="govuk-heading-s">Example of an organisation clarifying a SAR</h3>
+              <p class="govuk-body">
+                A college student has received a warning about their attendance. The student decides to submit a SAR. They’re not sure what to ask for, so they ask for all the information the college holds on them. 
+                <br><br>
+                The college replies with:  
+                <br><br>
+                <i>"Dear student, 
+                <br><br>
+                We hold a large quantity of personal data about you, including:
+              </p>
+
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>your registration details</li>
+                  <li>your attendance information</li>
+                  <li>data about your courses</li>
+                  <li>coursework and examinations</li>
+                  <li>all correspondence you have received within 2 years</li>
+                </ul>
+                
+              <p class="govuk-body">
+                We can send you all this data, but if you’re wanting specific data then we may be able to retrieve it quicker. Please let us know if you’d like specific information."</i>
+                <br><br>
+                The student replies that they only need attendance information and internal correspondence relating to them.
+                <br><br>
+                The college has not asked the student to reduce their request. They have made it clear that the student can still have all the information they asked for. 
+                <br><br>
+                The college should record evidence of the student’s clarification. 
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- When to check the identity of someone submitting a SAR -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                When to check the identity of someone submitting a SAR
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              In most cases you will need to ask for identification (ID) from the requester. 
+              <br><br>
+              If the requester is asking for their own information, then they will need to provide their identification. 
+              <br><br>
+              Adults should provide a photo ID plus another form of ID, this could be:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>their driver's license or passport for the photo ID</li>
+              <li>a utility bill or council tax bill that confirms their name and address</li>
+            </ul>
+            <p class="govuk-body">
+            If the requester is asking for another individual’s information, then they will need to provide the individual’s identification. 
+            <br><br>
+            They will also need to provide evidence that they have the authority to act on the individual’s behalf. This includes requesters such as parents and solicitors. 
+            <br><br>
+            If you know the requester and are sure of their identity and/or authority, you do not have to request ID. For example, a parent or student who you know well.
+            <br><br>
+            The data controller is responsible for deciding whether to request ID or not.
+            <br><br>
+            If standard identification requirements cannot be met, it is the data controller’s decision whether alternative identification is appropriate. 
+            </p>
+            
+          </div>
+        </div>
+
+
+        <!-- Responding to a request from a child -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                Responding to a request from a child
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              Requesting a SAR is the child’s right. A child can request access to information about themselves from any education setting that holds data about them. 
+              <br><br>
+              There are no age requirements attached to the right of subject access. In the UK, 12 is considered as the age where young people can exercise their own legal rights.
+              <br><br>
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/how-do-we-recognise-a-subject-access-request-sar/#children" target="_blank">The ICO provides guidance on the rights of children when requesting SARs (opens in a new tab)</a>.
+              <br><br>
+              If the young person is under 12 and making their own request, you might need to satisfy yourself that they understand what they’re doing, but this shouldn’t be a barrier to supplying them with their information.
+              <br><br>
+              If the young person is over 12, there’s unlikely to be any reason why you shouldn’t treat the request exactly as you would if an adult made it.
+              <br><br>
+              Although young people can submit their own subject access requests, parents or guardians can also exercise this right on their behalf. If the young person is 12 or over, check whether they’re happy to authorise the disclosure of their personal data to their parent or guardian.
+              <br><br>
+              When a child submits a SAR, you should assess if they can understand the information they will receive in response to their request.  
+              <br><br>
+              If you believe that the child has the maturity and capacity to request and receive the information, you should respond directly to the child.
+              <br><br>
+              You should not respond directly to the child if you believe they: 
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>do not have the maturity or competence to act independently</li>
+              <li>have a health condition that limits their understanding</li>
+              <li>have given consent for a representative or someone with parental responsibility to act on their behalf</li>
+            </ul>
+            <p class="govuk-body">
+              If a child requests a SAR themselves, this demonstrates some maturity and understanding about their right of access their personal information.  
+              <br><br>
+              If schools make the assessment that the child does not demonstrate the required maturity and capacity, they should contact the child and ask if they agree for their parent or guardian to make the request on their behalf.  
+              <br><br>
+              <a href="https://ico.org.uk/for-organisations/advice-for-small-organisations/frequently-asked-questions/right-of-accesssubject-access-requests-and-other-rights/#cana" target="_blank">The ICO provides guidance on SARs from young people (opens in a new tab)</a>.
+            </p>
+            
+          </div>
+        </div>
+
+        
+        <!-- Ways an individual can submit a SAR -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                Ways an individual can submit a SAR
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-4" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              A requester can submit a SAR:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>in writing, such as an email, letter, or via social media</li>
+              <li>verbally, such as over the phone or face-to-face</li>
+            </ul>
+            <p class="govuk-body">
+              It is the responsibility of the organisation to treat a request for information as a SAR.
+              <br><br>
+              The person requesting information does not need to refer to the process as a SAR. 
+              <br><br>
+              For example, a parent could ask for a copy of an incident report, regarding their child, during a phone call with a school. As the parent has asked for personal data, the school should treat this request as a SAR, in the first instance.
+              <br><br>
+              You should not ask the requester to make a SAR in a different way once they have made their request. 
+              <br><br>
+              You can create a preferred request method, such as a standard form, but should not insist a requester makes a SAR in a particular way. 
+            </p>
+            <h3 class="govuk-heading-s">Examples of SARs in different formats</h3>
+
+            <!-- Example block -->
+            <div class="example">
+              <h3 class="govuk-heading-s">Example 1</h3>
+              <p class="govuk-body">
+                A student makes a verbal request for their previous teacher’s reports during class. The teacher can ask the student to email their request, so the teacher does not miss any information out. The student has the right to say no or not to respond. The teacher must still respond within 1 calendar month from the day of the verbal request. 
+              </p>
+            </div>
+            <div class="example">
+              <h3 class="govuk-heading-s">Example 2</h3>
+              <p class="govuk-body">
+                A parent collects their 8-year-old from school. Whilst waiting for their child, the parent tells a teaching assistant that they wish to see copies of their child’s personal information relating to the school’s handling of an incident that recently occurred on school premises involving their child. 
+                <br><br>
+                Usually, the school encourages parents to make a SAR by using a request form on the school website. The teaching assistant asks the parent if they can complete the request form. The parent insists they want to make the request verbally. 
+                <br><br>
+                The teaching assistant writes down contact details for the parent, details of the child and an overview of the verbal request. The teaching assistant checks that the parent is happy for future correspondence to be made in writing and immediately passes the request to the headteacher, who is the school’s Data Protection Officer (DPO). The headteacher knows the parent and child well and decides not to request ID. The headteacher sends the parent a letter to acknowledge the SAR and to clarify the request.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+
+        <!-- Dealing with a SAR -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                Dealing with a SAR
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-5" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              What you need to do to after you have received a SAR.
+            </p>
+
+            <h3 class="govuk-heading-s">Timeframes for responding to a SAR</h3>
+            <p class="govuk-body">
+              A full SAR response must be sent within 1 calendar month.
+              <br><br>
+              Time taken to obtain identification and authority can be considered in the deadline. 
+              <br><br>
+              If the request is complex, the response time can be extended by up to 2 calendar months, making the response deadline 3 months in total. The ICO advise that you should respond to the SAR as soon as possible within the extended period.
+              <br><br>
+              For complex requests, you must tell the requester the new deadline and the reason their SAR is being treated as complex. You must do this in writing, within 1 calendar month of the original request date.
+              <br><br>
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-should-we-consider-when-responding-to-a-request/#complex" target="_blank">The ICO provides guidance on complex requests (opens in a new tab)</a>.
+            </p>
+
+            <h3 class="govuk-heading-s">Calculating how long you have to respond to a SAR</h3>
+            <p class="govuk-body">
+              Organisations have 1 calendar month to respond to a SAR, starting from the day a SAR is submitted.
+              <br><br>
+              If you receive a request on the last day of the month and the following month is shorter, a response must be made by the last day of the shorter month.  
+              <br><br>
+              If a SAR is received on 31 January, a response is required by 28 February (29 February in a leap year).  
+              <br><br>
+              If the deadline for a response falls on a weekend or bank holiday, you can respond on the next 
+              <br><br>
+              For example, the deadline for response is 2 May which is a bank holiday, the response deadline becomes 3 May.
+              <br><br>
+              <a href="https://ico.org.uk/for-the-public/time-limits-for-responding-to-data-protection-rights-requests/" target="_blank">Read more about SARs response times on the ICO website (opens in a new tab)</a>.
+              <br><br>
+              Calculate SARs response times using an <a href="https://www.timeanddate.com/date/duration.html" target="_blank">online duration calculator (opens in a new tab)</a>.
+            </p>
+
+            <h3 class="govuk-heading-s">Delays to SAR processing</h3>
+            <p class="govuk-body">
+              In some cases, the calendar month response time can be paused if you are unable to progress with the request. 
+              <br><br>
+              You may need to pause the request if:  
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>you are waiting for a requester to confirm their identification</li>
+              <li>you are waiting for the requester to provide evidence of their authority to act on behalf of another individual</li>
+              <li>you are seeking reasonable clarification about the request</li>
+            </ul>
+            <p class="govuk-body">
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-should-we-consider-when-responding-to-a-request/#:~:text=The%20clock%20only%20stops%20where,the%20format%20of%20the%20response." target="_blank">Read more about delaying a SAR response on the ICO website (opens in a new tab)</a>. 
+            </p>
+
+            <h3 class="govuk-heading-s">Receiving a SAR during the school holidays</h3>
+            <p class="govuk-body">
+              If you receive a SAR during the school holidays, you must still respond within 1 calendar month. Education settings cannot extend a SAR response because it is the school holidays.   
+            </p>
+
+            <h3 class="govuk-heading-s">Charging for a SAR</h3>
+            <div class="govuk-warning-text">
+              <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+              <strong class="govuk-warning-text__text">
+                <span class="govuk-visually-hidden">Warning</span>
+                In most cases, you cannot charge a fee to complete a SAR.
+              </strong>
+            </div>
+            <p class="govuk-body">
+              You can charge a 'reasonable fee' for the administrative costs of complying with a request if:   
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>it is manifestly unfounded or excessive</li>
+              <li>an individual requests further copies of their data following a request</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Dealing with information already held by the requester</h3>
+            <p class="govuk-body">
+              If a requester has already seen or has access to information, you do not need to resend this in your response. You will still need to explain that you hold that information and explain why you are not releasing it.
+            <br><br>
+            You should be able to evidence that the requester has already seen or had access to the information, in case you receive a complaint. 
+            </p>
+            <!-- Example block -->
+            <div class="example">
+              <h3 class="govuk-heading-s">Example of information already held by the requester</h3>
+              <p class="govuk-body">
+                A school governor makes a SAR. The school identifies a chain of emails relevant to the SAR. The school governor's email address is included in the recipient list. As the governor already holds a copy of the information, the school doesn't need to include this in their SAR response. The school explains this in their response. 
+              </p>
+            </div>
+
+            <h3 class="govuk-heading-s">Sending general information as part of the response</h3>
+            <p class="govuk-body">
+              Individuals have a right to know how their personal data is being used. An organisation's privacy policy will usually include this information. You should include a link to your organisation's privacy policy in your SAR response.
+              <br><br>
+              You can include extra or contextual information in a SAR response. You will need to explain that extra information is being provided outside of the requester’s information rights.  
+              <br><br>
+              Education settings must make reasonable efforts to search through all records, including: 
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>emails (including those in deleted/trash folders)</li>
+              <li>documents</li>
+              <li>spreadsheets</li>
+              <li>databases</li>
+              <li>record systems</li>
+              <li>CCTV</li>
+              <li>USB sticks/CDs</li>
+              <li>paper records in filing systems</li>
+              <li>instant messages</li>
+            </ul>
+            <p class="govuk-body">
+              Good storage and retention policies make it easier to identify personal information. 
+              <br><br>
+              Moving to a cloud-based system may help you prepare for subject access requests. Cloud-based systems also offer other security benefits. You can find out more information in the <a href="https://www.gov.uk/guidance/meeting-digital-and-technology-standards-in-schools-and-colleges/cloud-solution-standards-for-schools-and-colleges" target="_blank">[DfE cloud standards]</a>.                
+            </p>
+
+            <h3 class="govuk-heading-s">Redacting information</h3>
+            <p class="govuk-body">
+              Depending on what the requester asks for, you may need to remove some information. This process is known as redacting.
+              <br><br>
+              In most circumstances, you should redact personal information that identifies anyone other than the data subject. This is known as removing third party information. 
+              <br><br>
+              It may be appropriate to release third party information, under some circumstances. This decision must be made on a case-by-case basis and you should record any decisions taken on the release of third party information. 
+              <br><br>
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/information-about-other-individuals/" target="_blank">Read more on information about other individuals at the ICO's website (opens in a new tab).</a> 
+              <br><br>
+              You may need to redact information about:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>other pupils</li>
+              <li>other parents</li>
+              <li>staff</li>
+            </ul>
+            <p class="govuk-body">
+              When redacting identifiable information, make sure that redactions cannot be reversed. You should use specific redaction software, such as Adobe Acrobat Pro.
+              <br><br>
+              Individuals may ask to see CCTV images of themselves or their child. CCTV images contain personal information. Images of other people appearing in CCTV images must be redacted, for example by blurring. 
+              <br><br>
+              You should keep a copy of unredacted and redacted versions of information in case of review.                
+            </p>
+            <!-- Example block -->
+            <div class="example">
+              <h3 class="govuk-heading-s">Example 1</h3>
+              <p class="govuk-body">
+                Ebony Smith’s dad has submitted a SAR requesting Ebony’s behavioural record. 
+                <br><br>
+                The school office’s record reads: 
+                <br><br>
+                ‘Ebony Smith was excluded due to a fight she had with Sajid Khan’. 
+                <br><br>
+                When the school responds to the SAR, it should read ‘Ebony Smith was excluded due to a fight she had with (REDACTED)’.
+                <br><br>
+                Although Ebony’s dad might know who the fight was with, the school should not release this information. Ebony’s dad is only entitled to the personal data held about Ebony, not Sajid.  
+              </p>
+            </div>
+            <!-- Example block -->
+            <div class="example">
+              <h3 class="govuk-heading-s">Example 2</h3>
+              <p class="govuk-body">
+                A child has submitted a SAR for all information the school holds about their special educational needs. 
+                <br><br>
+                The school identifies the child’s personal information is contained in the minutes of a governors meeting. 
+                <br><br>
+                The child’s personal information in scope of the request amounts to 2 sentences within a 4-page document. The rest of the document is not about the child.
+                <br><br>
+                A SAR entitles you to access your own personal information but does not entitle you to access full documents. The school extracts the child’s personal information for inclusion in their response. They do not provide the whole document.
+                <br><br>
+                The school provides the requester with context about where the information is held. The remaining information is out of scope of the SAR and is not released.
+              </p>
+            </div>
+
+            <h3 class="govuk-heading-s">Dealing with information that is no longer available</h3>
+            <p class="govuk-body">
+              In some cases, a requester may ask for information you no longer hold. You should respond by telling them the information is no longer held by you. 
+              <br><br>
+              You can refer the requester to your data retention policy or privacy notice. 
+              <br><br>
+              For example, a school's data retention policy explains records of trip permission slips are held for a year after the trip has taken place. The school cannot provide permission slips for trips taken more than a year ago. 
+              <br><br>
+              Another organisation, such as the local authority, may hold the information that’s been requested. You can signpost the requester to the relevant organisation where that data may be held.
+            </p>
+
+            <h3 class="govuk-heading-s">SAR response formats</h3>
+            <p class="govuk-body">
+              Usually, a SAR response will be made in the same format as the request was received. 
+              <br><br>
+              A written response is preferable, but if you receive a verbal request, you can provide a verbal response if the requester asks for one. You should make a written record of the response. 
+              <br><br>
+              Make sure you submit the response in a secure way. You may want to submit the response by:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>encrypting the document</li>
+              <li>saving the document in a secure workspace</li>
+              <li>using tracked mail for physical documents </li>
+            </ul>
+            <p class="govuk-body">
+              If delivering a response by hand, consider obtaining a signature to confirm receipt.              
+            </p>
+
+            <h3 class="govuk-heading-s">Making sure a SAR response is accessible</h3>
+            <p class="govuk-body">
+              Education settings should make it simple for individuals who need additional support to make a SAR. You should make sure your response is in an accessible format that meets the needs of the requester.
+            </p>
+       </div>
+        
+        <!-- End of the accordian -->
+        </div>
+
+        
+        <!-- Refusing to comply with a SAR -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-6">
+                Refusing to comply with a SAR
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-6" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+                Schools can refuse to comply with a SAR wholly or partly if: 
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>an exemption can be applied to withhold some or all the personal information in scope of the request</li>
+              <li>the request is manifestly unfounded or manifestly excessive</li>
+            </ul>
+            <p class="govuk-body">
+              Examples of exemptions that may apply to education settings include: 
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>releasing the information would cause serious harm to a child</li>
+              <li>releasing information would not be in the best interests of a child</li>
+              <li>information relating to third parties</li>
+              <li>legal advice sought and received from a lawyer</li>
+              <li>information that may prejudice an investigation</li>
+            </ul>
+            <p class="govuk-body">
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/right-of-access/what-other-exemptions-are-there/" target="_blank">Find out more about exemptions on the ICO website (opens in a new tab)</a>.
+            </p>
+
+            <h3 class="govuk-heading-s">Manifestly unfounded SARs</h3>
+              <p class="govuk-body">
+                A manifestly unfounded SAR is when an individual submits multiple SARs with malicious intentions.   
+                <br><br>
+                For example, a parent submits a SAR every week with the intention of harassing a staff member following an earlier disagreement. The parent offers to withdraw their SAR for personal benefit. 
+                <br><br>
+                Before refusing to comply with a request on these grounds it is important you can show the reasons why you think a request is not genuine. 
+                <br><br>
+                A request might not be genuine if:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>it includes details of an intention to cause disruption</li>
+                <li>it targets an employee with unproven accusations</li>
+              </ul>
+              <p class="govuk-body">
+                <a href="https://ico.org.uk/for-organisations/law-enforcement/guide-to-le-processing/individual-rights/manifestly-unfounded-and-excessive-requests/" target="_blank">Read more about manifestly unfounded requests on the ICO website (opens in a new tab)</a>.
+              </p>
+  
+            <h3 class="govuk-heading-s">Notifying a requester about a refused SAR</h3>
+              <p class="govuk-body">
+                You will need to notify a requester that their SAR has been refused within 1 calendar month from the day they made the SAR. You will also need to include the reason for the refusal. The requester should be given details about how to complain to the ICO and/or seek a judicial review.
+              </p>
+              <!-- Example block -->
+              <div class="example">
+                <h3 class="govuk-heading-s">Example of a school refusing a SAR</h3>
+                <p class="govuk-body">
+                  A school receives a SAR from the absent parent of a child aged 16. The requester has asked for details of the college they now attend.  
+                  <br><br>
+                  This request immediately raises a red flag, that releasing the information may not be in the best interest of the child. Also, if the requester had a relationship with their child, it would be reasonable to expect that they would already know this information. 
+                  <br><br>
+                  The school acknowledges the SAR and asks the requester to provide:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>identification and proof of their link to the child, such as a birth certificate</li>
+                  <li>any parental agreement or court order that may be in place</li>
+                </ul>
+                <p class="govuk-body">
+                  This is to establish parental responsibility and any restrictions to the requester’s parental role.
+                  <br><br>
+                  The parent provides their own identification and a copy of the child’s birth certificate and states no agreement or court order is in place. This means the school now has the requester ID and parental responsibility status. 
+                  <br><br>
+                  The school contacts the child for consent to release the information, as they are aged 12 or over. The school also checks information/records they hold about the child. The child asks the school not to release any of their personal information to the requester. The child states they have no relationship with their absent parent, due to historic emotional abuse towards them and their resident parent. The child feels releasing the requested information would adversely affect their mental health.  
+                  <br><br>
+                  The school considers the rights of the parent and those of the child. As there is a risk to the child’s wellbeing, they make the decision not to release the child’s information. 
+                  <br><br>
+                  In this case the child’s data protection rights exceed parental rights and the SAR is refused.
+                  <br><br>
+                  Please note, education settings may need to be aware of their disclosure obligations under separate legislation. This example applies to a SAR only.
+                </p>
+                </div>
+
+                <h3 class="govuk-heading-s">Complaints about a SAR response</h3>
+                  <p class="govuk-body">
+                    A SAR response letter must include the following information:
+                  </p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>organisation contact regarding the response, usually the Data Protection Officer</li>
+                    <li>details on how to complain to the ICO</li>
+                    <li>acknowledgement of their right to seek judicial remedy</li>
+                    <li>acknowledgement of their other data protection rights such as right to erasure and right to rectification</li>
+                  </ul>
+                  <p class="govuk-body">
+                    If an individual is unhappy with their SAR response, the organisation should offer them the chance for their case to be reviewed.
+                    <br><br>
+                    If the individual remains unhappy with the school’s response, they can complain to the ICO. The ICO will consider the complaint and contact the school for further information or to provide advice as appropriate. 
+                    <br><br>
+                    When an organisation processes a SAR, they should anticipate any future challenge or a formal ICO complaint. Completing a case review record while handling a SAR, which details the school’s rationale and decision making relating to the release of information may serve as a useful tool when responding to complaints
+                  </p>
+              
+          </div>
+        </div>
+
+        <!-- Recording the SAR process -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-6">
+                Recording the SAR process
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-6" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              Having a good understanding about where your organisation holds personal data will make it easier to find information when processing a SAR.
+              <br><br>
+              You should keep a record of the SAR process from start to finish.
+              <br><br>
+              Recording the SAR process is especially helpful if a requester submits a complaint or if you are ever audited by the ICO.
+              <br><br>
+              You may want to record:               
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the date the request was received </li>
+              <li>any time the response was paused and why (for example getting identification)</li>
+              <li>a copy of all correspondence</li>
+              <li>information about which records/systems were searched and what was found</li>
+              <li>any information that was redacted and the reason why</li>
+              <li>the date you sent the response and a copy of it </li>
+              <li>copies of any ongoing correspondence with the requester (such as confirmation of receipt, complaints)</li>
+              <li>evidence of decision to refuse a SAR</li>
+              <li>evidence of decision to exempt any information</li>
+            </ul>
+
+          </div>
+        </div>
+        
+        <!-- End Accordian -->
+      </div> 
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="https://www.gov.uk/assets/government-frontend/govuk_publishing_components/icon-print-9785e3a205c49d1efe1bfe07f3b60cafe820be2d0ca670aa2f4565f5deed4d5f.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}
