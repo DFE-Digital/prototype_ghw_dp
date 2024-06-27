@@ -1,0 +1,482 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – Data protection policies and procedures
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #000000;margin: 0;margin-left: -5px;">
+            <svg class="gem-c-search__icon" width="16" height="16" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-4  govuk-!-static-margin-bottom-4" style="font-size: 1rem;"><a href="../" class="govuk-back-link">Back to contents</a></p>
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-l" style="margin-left: 15px;">Data protection policies and procedures</h1>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">How to comply and document compliance with UK GDPR and the Data Protection Act 2018.</p>
+
+      <p class="govuk-body">
+        Under <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/" target="_blank">UK General Data Protection Regulation (UK GDPR)</a> and the <a href="https://www.legislation.gov.uk/ukpga/2018/12/contents/enacted" target="_blank">Data Protection Act 2018 (DPA)</a>, schools have to:
+      </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>comply with the legislation</li>
+          <li>demonstrate that they're complying</li>
+        </ul>
+        <p class="govuk-body">
+          You can read more about the <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/documentation/how-do-we-document-our-processing-activities/" target="_blank">personal data you need to document and how to do so</a> on the Information Commissioner's Office (ICO) website, where there is a useful <a href="https://ico.org.uk/for-organisations/sme-web-hub/checklists/data-protection-self-assessment/controllers-checklist/" target="_blank">data controller's checklist</a>.
+        </p>
+       
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        
+        <!-- Statutory policies -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Statutory policies
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              It's a legal requirement that your school has data protection policies and procedures in place and that you regularly review and update these, along with the associated documentation. You should also review your other <a href="https://www.gov.uk/government/publications/statutory-policies-for-schools-and-academy-trusts" target="_blank">statutory policies</a> in the light of data protection legislation.
+            </p>
+            </div>
+        </div>
+
+        <!-- Record of processing activities -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Record of processing activities
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              A <a href="https://ico.org.uk/for-organisations/accountability-framework/records-of-processing-and-lawful-basis#ROPA" target="_blank">record of processing activities</a> is an efficient means of capturing all the important information about your school's data processing activities. It will improve your information governance and show your compliance with accountability principles. It will also ensure you comply with other aspects of data protection law, such as the requirement to create privacy notices and keep <a href="https://www.gov.uk/guidance/data-protection-in-schools/what-data-protection-means-for-schools#data-assets" target="_blank">data assets</a> secure, thereby reducing the risk of a personal data breach. Guidance on <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/documentation/how-do-we-document-our-processing-activities/" target="_blank">how to document your processing activities</a> is available on the ICO website.
+            </p>
+            <h3 class="govuk-heading-s">Step 1: identify your personal data assets</h3>
+            <p class="govuk-body">
+              Locate all the personal data your school has received, created or shared. It could be stored in:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>management information systems</li>
+              <li>communication systems</li>
+              <li>safeguarding technology</li>
+              <li>curriculum management software</li>
+              <li>virtual learning environments</li>
+              <li>workforce systems</li>
+              <li>catering systems</li>
+              <li>equipment records</li>
+              <li>photo and video storage systems</li>
+              <li>paper records and photos</li>
+              <li>statutory returns to the Department for Education (DfE) and local authorities</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Step 2: list your personal data assets</h3>
+            <p class="govuk-body">
+              Compile a list of that personal data. Start with broad data item groups, then add beneath each group specific data items. For example, the data item groups for pupils might be:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>admissions</li>
+              <li>attainment</li>
+              <li>attendance</li>
+              <li>behaviour</li>
+              <li>exclusions</li>
+              <li>personal identifiers, contacts and pupil characteristics</li>
+              <li>identity management and authentication</li>
+              <li>catering and free school meal management</li>
+              <li>trips and activities</li>
+              <li>medical information and administration</li>
+              <li>safeguarding and special educational needs</li>              
+            </ul>
+            <p class="govuk-body">
+              Repeat this for the personal data assets of all <a href="https://www.gov.uk/guidance/data-protection-in-schools/what-data-protection-means-for-schools#data-subjects" target="_blank">data subjects</a> in the school community.
+            </p>
+
+            <h3 class="govuk-heading-s">Mandatory information</h3>
+            <p class="govuk-body">
+              Your record of processing activities should include the following as a minimum:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the name and contact details of your school</li>
+              <li>the name and contact details of your data protection officer (DPO)/data protection lead</li>
+              <li>the name and contact details of any joint controllers</li>
+              <li>the purposes of the personal data processing you carry out</li>
+              <li>the categories of personal data you process</li>
+              <li>the categories of individuals whose personal data you process</li>
+              <li>the categories of organisations with which you share personal data</li>
+              <li>the schedule for retaining each category of personal data</li>
+              <li>a general description of your technical and organisational security measures</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Additional information</h3>
+            <p class="govuk-body">
+              The following prompts will help you add more detail about each personal data item to your record of processing activities.
+            </p>
+
+            <h3 class="govuk-heading-s">Source of personal data</h3>
+            <p class="govuk-body">
+              Record whether the data item:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>was received by the school</li>
+              <li>was created by the school</li>
+              <li>has been or will be shared by the school</li>
+            </ul>
+          
+            <h3 class="govuk-heading-s">Category of personal data</h3>
+            <p class="govuk-body">
+              Record whether it's:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="https://www.gov.uk/guidance/data-protection-in-schools/what-data-protection-means-for-schools#personal-data" target="_blank">personal data</a></li>
+              <li><a href="https://www.gov.uk/guidance/data-protection-in-schools/what-data-protection-means-for-schools#special-category-data" target="_blank">special category data</a></li>
+              <li><a href="https://www.gov.uk/guidance/data-protection-in-schools/what-data-protection-means-for-schools#criminal-offence-data" target="_blank">criminal offence data</a></li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Data controller or data processor</h3>
+            <p class="govuk-body">
+              Record whether, in respect of this data item:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the school's a <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/" target="_blank">data controller</a> or a <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/" target="_blank">data processor</a></li>
+              <li>the school's a <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/key-definitions/controllers-and-processors/" target="_blank">joint controller</a> and, if so, with which organisation</li>
+              <li>there's an up-to-date <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/accountability-and-governance/contracts/" target="_blank">controller-processor contract</a> in place, if applicable</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Access and use</h3>
+            <p class="govuk-body">
+              Record, in respect of this data item:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>the <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do#personal-data-the-justifications" target="_blank">lawful basis</a> (personal data) and, if applicable, <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do#special-category-data-the-justifications" target="_blank">additional condition</a> (special category or criminal offence data) that allows it to be accessed and used</li>
+              <li>who has <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/security/" target="_blank">access</a> to it and how that's controlled</li>
+              <li>whether there's an up-to-date <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/ico-codes-of-practice/data-sharing-a-code-of-practice/data-sharing-agreements/" target="_blank">data sharing agreement</a> in place, if applicable</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Data retention and destruction</h3>
+            <p class="govuk-body">
+              Record, in respect of this data item, the:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="https://www.gov.uk/guidance/data-protection-in-schools/data-retention#create-a-data-retention-schedule" target="_blank">data retention period</a> and the justification for it</li>
+              <li>procedure for <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-retention" target="_blank">depersonalisation or disposal</a> of it at the end of the retention period</li>
+              <li>disposal is <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-retention#dispose-of-personal-data" target="_blank">manual or automated</a> and, if manual, there's a prompt to ensure it is destroyed</li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Consent, rights and subject access requests</h3>
+            <p class="govuk-body">
+              Record whether, in respect of this data item, data subjects have:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>given their <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do#deciding-whether-the-lawful-basis-of-consent-or-explicit-consent-applies-instead" target="_blank">consent</a> for it to be processed and, if so, how</li>
+              <li>been informed of their <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-protection-policies-and-procedures#data-subjects-rights" target="_blank">rights regarding access, rectification and erasure</a></li>
+              <li>been told about the procedure for making a <a href="https://www.gov.uk/guidance/data-protection-in-schools/information-rights-requests-relating-to-personal-data#subject-access-requests" target="_blank">subject access request</a></li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Security and personal data breaches</h3>
+            <p class="govuk-body">
+              Record whether, in respect of this data item, there:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>are up-to-date information and communication technology (ICT) security policies and procedures in place to <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-protection-policies-and-procedures#cyber-security-and-safeguarding" target="_blank">prevent a cyberattack</a></li>
+              <li>is a procedure for <a href="https://www.gov.uk/guidance/data-protection-in-schools/sharing-personal-data" target="_blank">secure sharing</a></li>
+              <li>is a procedure for <a href="https://www.gov.uk/guidance/data-protection-in-schools/managing-breaches-of-data" target="_blank">handle a personal data breach</a></li>
+            </ul>
+
+            <h3 class="govuk-heading-s">Automated decision-making</h3>
+            <p class="govuk-body">
+              Record whether, in respect of this data item, the processing involves any <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/automated-decision-making-and-profiling/what-is-automated-individual-decision-making-and-profiling/#id2" target="_blank">automated decision-making</a>.
+              <br><br>
+              Share your record of processing activities with your school leadership team (SLT) and governors or trustees. They are responsible for ensuring your school is compliant with the DPA and keeps only the personal data it needs.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- Data protection impact assessment (DPIA) -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                Data protection impact assessment (DPIA)
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              A <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-le-processing/accountability-and-governance/data-protection-impact-assessments" target="_blank">DPIA</a> is a tool to help you identify, measure and manage data protection risks. Under UK GDPR, a DPIA is needed whenever the processing of personal data is likely to result in a ‘high risk to the rights and freedoms' of individuals.
+              <br><br>
+              An effective DPIA will help you:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>identify, manage and mitigate data protection risks</li>
+              <li>fix problems at an early stage, minimising those risks</li>
+              <li>consider and mitigate risks to individuals' privacy</li>
+              <li>ensure individuals' expectations of privacy obligations are being met - for example, by the provision of <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-protection-policies-and-procedures#privacy-notices" target="_blank">privacy notices</a></li>
+              <li>provide individuals with reassurance</li>
+              <li>demonstrate both accountability and compliance with data protection law</li>
+              <li>avoid reputational damage to your school</li>              
+            </ul>
+            <p class="govuk-body">
+              You should consider and document carrying out a DPIA of personal data collected:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>about vulnerable data subjects, including:</li>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>children (because of their age)</li>
+                  <li>employees (because the power imbalance means they cannot easily consent or object to the processing of their data by an employer)</li>
+                  <li>more vulnerable sectors of the population (who need special protection)</li>
+                </ul>
+                <li>by innovative technologies, such as:</li>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li><a href="https://www.gov.uk/government/publications/protection-of-biometric-information-of-children-in-schools" target="_blank">biometrics</a></li>
+                  <li><a href="https://www.ncsc.gov.uk/section/advice-guidance/all-topics?allTopics=true&topics=internet%20of%20things&sort=date%2Bdesc" target="_blank">internet of things applications</a></li>
+                  <li><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/cctv-and-video-surveillance/guidance-on-video-surveillance-including-cctv/" target="_blank">safeguarding equipment, such as CCTV</a></li>
+                </ul>
+              </ul>
+
+              <h3 class="govuk-heading-s">Review your record of processing activities</h3>
+              <p class="govuk-body">
+                Look again at each personal data item in your <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-protection-policies-and-procedures#record-of-processing-activities" target="_blank">record of processing activities</a> and ask yourself whether:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>there are any current data processing activities that do not have a <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do#personal-data-the-justifications" target="_blank">lawful basis</a> (personal data) and, if applicable, <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do#special-category-data-the-justifications" target="_blank">additional condition</a></li>
+                <li>as the result of applying those <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-processing-a-school-is-permitted-to-do" target="_blank">justifications</a>, you would be less likely to carry out any safeguarding activities – if so, re-assess how you're applying the law</li>
+                <li>you're certain about the procedure for <a href="https://www.gov.uk/guidance/data-protection-in-schools/sharing-personal-data" target="_blank">data sharing</a> in every case, including when this takes place and with which organisations</li>
+                <li>there's a procedure in place for updating the <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/ico-codes-of-practice/data-sharing-a-code-of-practice/data-sharing-agreements/" target="_blank">data sharing agreement</a> with any organisation to which you're passing personal data</li>
+                <li>there's a procedure in place for updating your <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-protection-policies-and-procedures#cyber-security-and-safeguarding" target="_blank">ICT security policies</a>, and regular training for everyone who handles personal data</li>
+                <li>the school's systems allow you to carry out responsible <a href="https://www.gov.uk/guidance/data-protection-in-schools/data-retention#create-a-data-retention-schedule" target="_blank">data retention, depersonalisation and disposal</a> procedures</li>
+                <li>everyone in the school community knows the procedure for reacting to a <a href="https://www.gov.uk/guidance/data-protection-in-schools/managing-breaches-of-data" target="_blank">personal data breach</a> and that procedure has been tested</li>
+              </ul>
+
+              <h3 class="govuk-heading-s">Record the risks</h3>
+              <p class="govuk-body">
+                There's no definitive DPIA format you must follow, so you can develop your own to suit your school's needs, using this guidance and your own risk management framework as a starting point.
+              </p>
+
+              <!-- CTA block -->
+              <div class="cta-block">
+                <p class="govuk-body">
+                  You can download a suggested <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/ico-codes-of-practice/age-appropriate-design-a-code-of-practice-for-online-services/annex-d-dpia-template/" target="_blank">DPIA template</a> from the ICO website.
+                </p>
+              </div>
+
+              <p class="govuk-body">
+                A DPIA does not have to demonstrate that all risks have been eliminated, but it'll help you document them and assess whether any that remain are justified.
+                <br><br>
+                If it identifies a high risk and you cannot take measures to minimise it, you'll need to seek advice from the ICO. You may not begin processing the personal data in question until you have acted on the ICO's advice.
+              </p>
+
+              <h3 class="govuk-heading-s">Regularly reassess the impact</h3>
+              <p class="govuk-body">
+                A DPIA is not a one-off exercise. You need to keep it under regular review and update it if anything changes in your school's data life cycle.
+                <br><br>
+                In particular, if you make any significant changes to how or why you process personal data, or the amount of personal data you collect, it has to demonstrate that you've assessed any new risks.
+                <br><br>
+                You should also review your DPIA if a new:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>security flaw is identified</li>
+                <li>technology is made available</li>
+                <li>contractor is appointed</li>
+                <li>public concern is raised over the type of processing you do</li>
+                <li>public concern is raised over the vulnerability of a particular group of data subjects</li>
+              </ul>
+
+          </div>
+        </div>
+
+
+            <!-- Privacy notices -->
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                    Privacy notices
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-4" class="govuk-accordion__section-content">
+                <p class="govuk-body">
+                  Under UK GDPR and the Data Protection Act 2018, every school has to make its privacy notices freely available to those whose personal data it handles.
+                  <br><br>
+                  A privacy notice explains:
+                </p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>why a school needs to collect personal data</li>
+                    <li>what it plans to do with it</li>
+                    <li>how long it will keep it</li>
+                    <li>whether it will be sharing it with any other organisation</li>
+                  </ul>
+                <p class="govuk-body">
+                  Privacy notices need to be clear and accessible, and regularly reviewed and updated. Being transparent builds trust, avoids confusion and lets everyone in the school community know what to expect.
+                  <br><br>
+                  <a href="https://www.gov.uk/government/publications/data-protection-and-privacy-privacy-notices" target="_blank">Model privacy notices</a> for schools to issue to staff, parents, carers and pupils about the collection of data are available.
+                </p>
+                
+                <h3 class="govuk-heading-s">Data subjects' rights</h3>
+                <p class="govuk-body">
+                  Data subjects' rights over the use of their personal data are key to a privacy notice. They are:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>the right to be informed</li>
+                  <li>the right of access</li>
+                  <li>the right to rectification</li>
+                  <li>the right to erasure</li>
+                  <li>the right to restrict processing</li>
+                  <li>the right to data portability</li>
+                  <li>the right to object</li>
+                  <li>rights in relation to automated decision-making and profiling</li>
+                </ul>
+                <p class="govuk-body">
+                  Your school should clearly communicate to data subjects:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>what personal data is being processed</li>
+                  <li>why their personal data is being processed</li>
+                  <li>on what lawful basis their personal data is being processed</li>
+                  <li>with whom their personal data will be shared and why</li>
+                  <li>how and for how long their personal data will be stored</li>
+                  <li>how they can exercise their rights over their personal data</li>
+                  <li>whom to contact if they have any questions or concerns</li>
+                </ul>
+                <p class="govuk-body">
+                  The information in your <a href="#accordion-default-heading-2">record of processing activities</a> will be a useful source of information in this regard.
+                  <br><br>
+                  There are a number of ways in which you can keep data subjects informed. These include:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                  <li>on joining the school, via an induction pack</li>
+                  <li>when they provide extra personal data during the school year</li>
+                  <li>through effective use of the school website</li>
+                  <li>in the case of staff, when they apply for a role, accept a contract, are appraised, or leave the school</li>
+                </ul>
+
+                <!-- CTA block -->
+              <div class="cta-block">
+                <p class="govuk-body">
+                  Download this <a href="https://assets.publishing.service.gov.uk/media/63beecc18fa8f513b6c04ee3/Record-check_and_consent.docx" target="_blank">example template</a>, which offers a simple way for a school to seek parents' and carers' consent to process children's personal data at the same time as they ask them to confirm or amend it.
+                </p>
+              </div>
+
+              <h3 class="govuk-heading-s">Inform data subjects about their privacy rights</h3>
+                <p class="govuk-body">
+                  Privacy notices are the most common way of complying with data subjects' right to be informed.
+                  <br><br>
+                  A range of <a href="https://www.gov.uk/government/publications/data-protection-and-privacy-privacy-notices" target="_blank">model privacy notices</a> is available, with suggested wording that schools can tailor to suit their circumstances.
+                  <br><br>
+                  Children have the same rights over their personal data as adults. Schools can be inventive in the way they present child-friendly privacy rights information, using diagrams, graphics, comic strips, videos and so on. Introducing the idea of data privacy within wider online safety lessons will allow teachers to use age-appropriate language, ensure understanding and encourage pupils to ask questions.
+                  <br><br>
+                  The ICO has a useful checklist of <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/the-right-to-be-informed/what-privacy-information-should-we-provide/" target="_blank">what to include in a privacy notice</a>.
+                </p>
+
+
+              </div>
+            </div>
+      
+        <!-- Cyber security and safeguarding -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                Cyber security and safeguarding
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-5" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              It's essential to ensure critical data is protected from cyber-attacks and unauthorised access. You should be aware of what personal data you store within your school network, and what's stored outside of your direct control. Both locations must have in place good security settings, including encryption and access control, and all those processing personal data should be trained in keeping data safe.
+              <br><br>
+              DfE has guidance to help schools <a href="https://www.gov.uk/government/collections/using-technology-in-education" target="_blank">keep people and their personal data safe</a> when using digital technology, and on <a href="https://www.gov.uk/guidance/meeting-digital-and-technology-standards-in-schools-and-colleges" target="_blank">meeting ICT service and equipment standards</a>.
+              <br><br>
+              The government's National Cyber Security Centre has resources to improve cyber resilience. They include:
+            </p>
+
+            <ul class="govuk-list govuk-list--bullet">
+              <li><a href="https://www.ncsc.gov.uk/collection/10-steps" target="_blank">information about better protection in cyberspace</a></li>
+              <li><a href="https://www.ncsc.gov.uk/collection/device-security-guidance" target="_blank">device security guidance</a></li>
+              <li><a href="https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles" target="_blank">cloud security principles</a></li>
+              <li><a href="https://www.ncsc.gov.uk/section/active-cyber-defence/services" target="_blank">tools to strengthen cyber defence</a></li>
+              <li><a href="https://www.ncsc.gov.uk/information/cyber-security-training-schools" target="_blank">cyber security training for staff</a></li>
+              <li><a href="https://www.ncsc.gov.uk/news/ncsc-consolidates-advice-on-secure-home-learning" target="_blank">home learning technology advice</a></li>
+              <li><a href="https://www.ncsc.gov.uk/collection/10-steps/data-security" target="_blank">data security tips</a></li>
+            </ul>
+            <p class="govuk-body"> 
+              The police service's regional cyber protect officers provide free advice and training to schools.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- End Accordian -->
+      </div> 
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}
