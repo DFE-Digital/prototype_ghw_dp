@@ -1,0 +1,565 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – Record keeping and management
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #000000;margin: 0;margin-left: -5px;">
+            <svg class="gem-c-search__icon" width="16" height="16" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-4  govuk-!-static-margin-bottom-2" style="font-size: 1rem;"><a href="../" class="govuk-breadcrumbs__link">Back to contents</a></p>
+<hr class="govuk-section-break govuk-section-break--l govuk-!-static-margin-top-0 govuk-section-break--visible">
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-l" style="margin-left: 15px;">Record keeping and management</h1>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">How to carry out an audit to check what personal data your school holds. You can use a data retention schedule to document how long you'll keep different types of data for.</p>
+
+      <p class="govuk-body">
+        The Data Protection Act 2018 and UK GDPR says you should only keep data for as long as you need it. You should check each year what data you hold and if you still need to keep it.
+        <br><br>
+        If you identify any information you no longer need, you should dispose of it safely.
+        <br><br>
+        It's important to put in place policies and processes so you can prove and evidence that you're not keeping data for longer than necessary.
+      </p>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        
+        <!-- Develop a data retention policy -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Develop a data retention policy
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              Your data retention policy should explain how long you need to keep information. It should set out:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>why you are holding this data</li>
+              <li>your justification for keeping the data</li>
+              <li>the lawful basis for processing and keeping the data</li>
+              <li>if you will pass this data on and, if so, if you need to keep it once you have passed it on</li>
+              <li>the steps you will take when you destroy any personal data</li>
+            </ul>
+            <p class="govuk-body">
+              A good data retention policy includes how long you will keep data items within the different areas of school administration. For example, you may need to keep pupil names in your safeguarding system longer than in your catering system.
+              <br><br>
+              When setting a data retention policy, consider:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>why you are holding this data</li>
+              <li>if there is a legal duty to keep the information for a set period of time</li>
+              <li>whether you will need to share the data and, if so, whether you need to keep it after sharing it</li>
+              <li>if it is more appropriate for another organisation such as the local authority to keep the information in the long term</li>
+              <li>if you will need the data to meet Ofsted's requirements</li>
+              <li>whether you can delete or depersonalise some of the information</li>
+              <li>if you have a justification to keep the data</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- Carry out a personal data audit -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+                Carry out a personal data audit
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              You should carry out an audit of all the personal data you hold each year to check it is up to date and still needed. You must not keep any data longer than is necessary.
+              <br><br>
+              As part of your audit, include pupil and staff data in:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>paper records</li>
+              <li>databases</li>
+              <li>online systems</li>
+              <li>videos and photos</li>
+            </ul>
+            <p class="govuk-body">
+              Reviewing the personal data you hold will help you to identify what data you need to:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>keep</li>
+              <li>destroy</li>
+              <li>change from a paper format to an electronic format</li>
+              <li>keep for research or litigation purposes</li>
+            </ul>
+            <p class="govuk-body">
+              Consider grouping your data items about pupils into these areas:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>admissions</li>
+              <li>attainment</li>
+              <li>attendance</li>
+              <li>behaviour</li>
+              <li>exclusions</li>
+              <li>personal identifiers, contacts and pupil characteristics</li>
+              <li>identity management and authentication</li>
+              <li>catering and free school meal management</li>
+              <li>trips and activities</li>
+              <li>medical information and administration</li>
+              <li>safeguarding and special educational needs</li>
+            </ul>
+            <p class="govuk-body">
+              Document the decision you make against each data item. Find out <a href="/data-protection-policies-and-procedures#accordion-default-heading-2" target="_blank">how to create a record of processing activity</a>.
+              <br><br>
+              Share the results of your audit with your school leaders, governors and trustees. They are responsible for making sure the school is compliant with the Data Protection Act 2018 and only keeps data it needs.
+            </p>
+
+
+          </div>
+        </div>
+
+
+        <!-- Depersonalise personal data -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-3">
+                Depersonalise personal data
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-3" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              As data becomes older, there are steps you can take to keep data about pupils for analytical purposes. Before deleting the data completely, remove names and personal identifiers. For example, once the pupil has left your school, you could remove their name and date of birth. This will remove some of the risks around personal data. It will also allow you to use it for long-term analysis of trends.
+              <br><br>
+              Another option is to replace the personal information with non-personal identifiers. For example, you could replace the:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>name with a random ID</li>
+              <li>date of birth with year of birth</li>
+              <li>postcode with locality or town name</li>
+            </ul>
+            <p class="govuk-body">
+              For some records, you may only need to keep summary statistics.
+            </p>
+            </div>
+        </div>
+
+
+        <!-- Dispose of personal data -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-4">
+                Dispose of personal data
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-4" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              When records have reached the end of their retention period, data must be disposed of securely and confidentially. The ICO has guidance on <a href="https://ico.org.uk/for-organisations/advice-for-small-organisations/whats-new/blogs/practical-methods-for-destroying-documents-that-are-no-longer-needed/" target="_blank">practical methods for destroying records that are no longer needed</a>.
+              <br><br>
+              All records containing personal information or sensitive policy information must be made either unreadable or so you cannot reconstruct it.
+              <br><br>
+              Your data retention policy must include your procedures for safely destroying personal data. All staff should be aware of these procedures to help prevent any data breaches.
+              <br><br>
+              Do not dispose of records with the regular waste or in a skip.
+              <br><br>
+              You should:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>shred paper records using a cross-cutting shredder, or get an external company to shred them</li>
+              <li>destroy storage media and hard disks to particles no larger than 6mm</li>
+              <li>dismantle and shred audio and video tapes</li>
+            </ul>
+            <p class="govuk-body">
+              If you use an external company to destroy records, it must:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>shred all records on-site in the presence of an employee</li>
+              <li>be able to prove that the records have been destroyed and provide a certificate of destruction</li>
+              <li>have trained its staff in the handling of confidential documents</li>
+            </ul>
+            <p class="govuk-body">
+              The Freedom of Information Act 2000 requires you to maintain a list of records that have been destroyed and who authorised their destruction. You must have approval from a senior leader for the record to be destroyed.
+              <br><br>
+              You must document the destruction. Record a brief description of the data, the number of files and who authorised the destruction. Shred the records as soon as you've documented them as having been destroyed.
+              <br><br>
+              Further guidance is available on <a href="https://www.gov.uk/government/publications/record-keeping-and-retention-information-for-academies/record-keeping-and-retention-information-for-academies-and-academy-trusts#how-to-dispose-of-records" target="_blank">record keeping and retention for academies and academy trusts</a>.
+            </p>
+
+          </div>
+        </div>
+
+
+            <!-- Create a data retention schedule -->
+            <div class="govuk-accordion__section">
+              <div class="govuk-accordion__section-header">
+                <h2 class="govuk-accordion__section-heading">
+                  <span class="govuk-accordion__section-button" id="accordion-default-heading-5">
+                    Create a data retention schedule
+                  </span>
+                </h2>
+              </div>
+              <div id="accordion-default-content-5" class="govuk-accordion__section-content">
+                <p class="govuk-body">
+                  Once you have your list of data item groups, consider creating a data retention schedule. This should state how long you'll hold certain types of personal data before destroying it.
+                  <br><br>
+                  How long you keep different types of data will depend on whether you're keeping it for operational needs or to comply with legal requirements.
+                  <br><br>
+                  The following records have statutory retention periods. You should decide how long you need to keep other records, in line with the business need of your school.
+                </p>
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Pupil records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Primary school pupil records</th>
+                      <td class="govuk-table__cell">Until the pupil leaves the school.</td>
+                      <td class="govuk-table__cell">Transfer to secondary school or other primary school when the pupil leaves.</td>
+                      <td class="govuk-table__cell">See <a href="https://www.legislation.gov.uk/uksi/2005/1437/regulation/3" target="_blank">The Education (Pupil Information) (England) Regulations 2005</a> for details of what to keep in the pupil record. There is guidance on <a href="https://www.gov.uk/guidance/school-to-school-service-how-to-transfer-information" target="_blank">how to transfer information</a> to another school.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Secondary school pupil records</th>
+                      <td class="govuk-table__cell">Until the pupil’s 25th birthday.</td>
+                      <td class="govuk-table__cell">Dispose of records securely. If the pupil leaves to go to another school, transfer the records to that school. There is guidance on <a href="https://www.gov.uk/government/publications/record-keeping-and-retention-information-for-academies/record-keeping-and-retention-information-for-academies-and-academy-trusts#what-should-happen-to-records-belonging-to-an-academy-or-trust-that-is-closing" target="_blank">what to do if the school closes</a> before the end of the retention period.</td>
+                      <td class="govuk-table__cell">See <a href="https://www.legislation.gov.uk/uksi/2005/1437/regulation/3" target="_blank">The Education (Pupil Information) (England) Regulations 2005</a> for details of what to keep in the education record. Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Special educational needs and disabilities (SEND), including SEND statements and accessibility plans</th>
+                      <td class="govuk-table__cell">Until the pupil’s 30th birthday.</td>
+                      <td class="govuk-table__cell">Dispose of records securely, unless the document is subject to a legal hold. If the pupil leaves to go to another school, transfer the records to that school.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/send-code-of-practice-0-to-25" target="_blank">SEND code of practice: 0 to 25 years</a>. Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Attendance and absence</th>
+                      <td class="govuk-table__cell">Until the pupil’s 30th birthday.</td>
+                      <td class="govuk-table__cell">Dispose of records securely, unless the document is subject to a legal hold. If the pupil leaves to go to another school, transfer the records to that school.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/send-code-of-practice-0-to-25" target="_blank">SEND code of practice: 0 to 25 years</a>. Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Child protection records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Child protection files</th>
+                      <td class="govuk-table__cell">Until the child’s 25th birthday. If the file relates to child sexual abuse, retain until the child’s 75th birthday.</td>
+                      <td class="govuk-table__cell">Dispose of records securely. Child protection files should be passed on to any new school a child attends. This should be transferred separately from the main pupil file.</td>
+                      <td class="govuk-table__cell">Should be stored in a separate child protection file. <a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank">Keeping children safe in education</a> sections 66, 67, 121 and 122. The Report of the Independent Inquiry into Child Sexual Abuse (IICSA), <a href="https://www.iicsa.org.uk/reports-recommendations/publications/inquiry/final-report/ii-inquirys-conclusions-and-recommendations-change/part-h-supporting-victims-and-survivors/h5-access-records.html" target="_blank">recommendation on access to records</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Allegations of child protection against a member of staff, including unfounded allegations</th>
+                      <td class="govuk-table__cell">Until the staff member’s normal retirement age, or 10 years from the date of the allegation, whichever is later.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank">Keeping children safe in education</a>. <a href="https://www.gov.uk/government/publications/working-together-to-safeguard-children--2" target="_blank">Working together to safeguard children</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Finance records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Contracts</th>
+                      <td class="govuk-table__cell">6 years from the last payment on the contract.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Debtor’s records</th>
+                      <td class="govuk-table__cell">6 years from the end of the financial year.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">VAT records</th>
+                      <td class="govuk-table__cell">6 years from the end of the financial year.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">May include invoices, budgets, bank statements and annual accounts. <a href="https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021" target="_blank">Record keeping (VAT Notice 700/21)</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Governance records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Admissions</th>
+                      <td class="govuk-table__cell">3 years from the admission date.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/working-together-to-improve-school-attendance" target="_blank">Working together to improve school attendance.</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Attendance registers</th>
+                      <td class="govuk-table__cell">3 years from the date of entry.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2006/1751/regulation/14/made" target="_blank">Regulation 14 of the Education (Pupil Registration) (England) Regulations 2006.</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Annual governors report</th>
+                      <td class="govuk-table__cell">10 years.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2002/1171/made" target="_blank">The Education (Governors’ Annual Reports) (England) (Amendment) Regulations 2002.</a> Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Curricular record</th>
+                      <td class="govuk-table__cell">At least one year.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/1989/1261/made" target="_blank">The Education (School Records) Regulations 1989</a>. <a href="https://www.legislation.gov.uk/uksi/2005/1437/regulation/3" target="_blank">Regulation 3 of the Education (Pupil Information) (England) Regulations 2005</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Directors – disqualification</th>
+                      <td class="govuk-table__cell">15 years from the date of disqualification.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2004/3264/made" target="_blank">The Education (Company Directors Disqualification Act 1986: Amendments to Disqualification Provisions) (England) Regulations 2004</a></td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Records of educational visits</th>
+                      <td class="govuk-table__cell">10 years from the date of the visit. If there was an incident on the visit, retain the permission slips for all pupils and the incident report in the <a href="https://www.gov.uk/guidance/data-protection-in-schools/record-keeping-and-management#pupil-records" target="_blank">pupil record</a>, or until the pupil reaches the age of 25.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/health-and-safety-on-educational-visits/health-and-safety-on-educational-visits" target="_blank">Health and safety on educational visits</a>. Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/introduction" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">School vehicles</th>
+                      <td class="govuk-table__cell">6 years from the disposal of the vehicle.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/part/I/crossheading/actions-founded-on-tort" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Statutory registers and compliance</th>
+                      <td class="govuk-table__cell">Retention periods vary, for example: Memorandums of understanding should be retained for the life of the academy plus 6 years. Annual reports should be retained for 10 years from the date of the report. Board meeting records should be retained for 10 years from the date of the meeting.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">May include annual reports and governance records. <a href="https://www.legislation.gov.uk/ukpga/2006/46/contents" target="_blank">Companies Act 2006</a> contains information on which statutory registers to keep. <a href="https://www.gov.uk/guidance/governance-in-maintained-schools/7-compliance" target="_blank">Compliance guidance in the maintained schools governance guide</a>. <a href="https://www.gov.uk/guidance/-governance-in-academy-trusts/7-compliance" target="_blank">Compliance guidance in the academy trust governance guide</a>. <a href="https://www.gov.uk/guidance/academy-trust-handbook" target="_blank">Academy trust handbook</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Health and safety records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Accessibility plans</th>
+                      <td class="govuk-table__cell">Life of plan plus 6 years.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/part/I/crossheading/actions-founded-on-tort" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Accident records</th>
+                      <td class="govuk-table__cell">3 years from the date of the accident.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Accidents involving pupils should be retained in the <a href="https://www.gov.uk/guidance/data-protection-in-schools/record-keeping-and-management#pupil-records" target="_blank">pupil record</a>. <a href="https://www.legislation.gov.uk/uksi/1979/628/regulation/25" target="_blank">Regulation 25 of the Social Security (Claims and Payments) Regulations 1979</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Monitoring exposure to substances hazardous to health, including asbestos</th>
+                      <td class="govuk-table__cell">5 years.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2002/2677/contents" target="_blank">The Control of Substances Hazardous to Health Regulations 2002</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Health surveillance records</th>
+                      <td class="govuk-table__cell">40 years.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2002/2677/contents" target="_blank">The Control of Substances Hazardous to Health Regulations 2002</a>. <a href="https://www.hse.gov.uk/health-surveillance/record-keeping.htm" target="_blank">Health surveillance - Record keeping</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Other health records of staff</th>
+                      <td class="govuk-table__cell">While the worker is employed in your school.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2002/2677/contents" target="_blank">The Control of Substances Hazardous to Health Regulations 2002</a>. <a href="https://www.hse.gov.uk/health-surveillance/record-keeping.htm" target="_blank">Health surveillance - Record keeping</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Fire assessments</th>
+                      <td class="govuk-table__cell">Life of the risk assessment plus 6 years.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/2005/1541/contents/made" target="_blank">Fire Service Order 2005</a>. Retain as detailed in section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/part/I/crossheading/actions-founded-on-tort" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Property records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Maintenance records</th>
+                      <td class="govuk-table__cell">6 years from the end of the financial year.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/guidance/record-keeping-for-vat-notice-70021" target="_blank">Record keeping (VAT Notice 700/21)</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Title deeds</th>
+                      <td class="govuk-table__cell">12 years from the end of the deed.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/part/I/crossheading/actions-founded-on-tort" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <table class="govuk-table govuk-table--small-text-until-tablet">
+                  <caption class="govuk-table__caption govuk-table__caption--m">Staff records</caption>
+                  <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                      <th scope="col" class="govuk-table__header">Document type</th>
+                      <th scope="col" class="govuk-table__header">Retention period</th>
+                      <th scope="col" class="govuk-table__header">Action at end of retention period</th>
+                      <th scope="col" class="govuk-table__header">Further information</th>
+                    </tr>
+                  </thead>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Copies of DBS certificates</th>
+                      <td class="govuk-table__cell">6 months from the date of recruitment.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank">Keeping children safe in education</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Maternity pay records</th>
+                      <td class="govuk-table__cell">3 years after the end of the tax year in which the maternity pay period ends.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/1986/1960/regulation/26" target="_blank">The Statutory Maternity Pay (General) Regulations 1986</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Pay records</th>
+                      <td class="govuk-table__cell">3 years from the end of the tax year they relate to.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.gov.uk/paye-for-employers/keeping-records" target="_blank">PAYE and payroll for employers: Keeping records</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Personnel files</th>
+                      <td class="govuk-table__cell">6 years from termination of employment.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell">Section 2 of the <a href="https://www.legislation.gov.uk/ukpga/1980/58/part/I/crossheading/actions-founded-on-tort" target="_blank">Limitation Act 1980</a>.</td>
+                    </tr>
+                    <tr class="govuk-table__row">
+                      <th scope="row" class="govuk-table__header">Retirement benefits</th>
+                      <td class="govuk-table__cell">A minimum of 6 years from the end of the year in which the accounts were signed.</td>
+                      <td class="govuk-table__cell">Dispose of records securely.</td>
+                      <td class="govuk-table__cell"><a href="https://www.legislation.gov.uk/uksi/1995/3103/regulation/15/made" target="_blank">Regulation 15 of the Retirement Benefits Schemes (Information Powers) Regulations 1995</a>.</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+      
+       
+
+
+        <!-- End Accordian -->
+      </div> 
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}
