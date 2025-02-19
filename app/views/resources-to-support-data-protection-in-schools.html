@@ -1,0 +1,106 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – Resources to support data protection in schools
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #000000;margin: 0;margin-left: -5px;">
+            <svg class="gem-c-search__icon" width="16" height="16" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-4  govuk-!-static-margin-bottom-2" style="font-size: 1rem;"><a href="../" class="govuk-breadcrumbs__link">Back to contents</a></p>
+<hr class="govuk-section-break govuk-section-break--l govuk-!-static-margin-top-0 govuk-section-break--visible">
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-l" style="margin-left: 15px;">Resources to support data protection in schools</h1>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">Download resources to help with data protection in schools, including posters, templates, and learning materials.</p>
+
+      <p class="govuk-body">
+        This page offers resources to support data protection in schools, including printable posters.
+        <br><br>
+        We are open to feedback on what would be most helpful for data protection officers. <a href="https://forms.office.com/pages/responsepage.aspx?id=yXfS-grGoU2187O4s0qC-WPHxkSPLCVBpB8IQnXO5S9UM0RSSlIxRk5ONzM5SzQwR0w0Mk5BTkVWNi4u&route=shorturl" target="_blank">Fill in our survey</a> to share your suggestions and help us improve.
+      </p>
+        
+      <h3 class="govuk-heading-m">Posters</h3>
+      <p class="govuk-body">
+        Use our posters to remind staff at your school about the important aspects of data protection.
+      </p>
+
+      <h3 class="govuk-heading-s">Artificial intelligence</h3>
+      <p class="govuk-body">
+       <a href="#">Do you need to use AI? Need, Read, Proceed (PDF, 205 KB)</a>
+       <br><br>
+       <a href="#">Do you need to use AI? Need, Read, Proceed - low ink version (PDF, 186 KB)</a>
+       <br><br>
+       <a href="#">Protect children’s privacy when using AI (PDF, 168 KB)</a>
+       <br><br>
+       <a href="#">Protect children’s privacy when using AI - low ink version (PDF, 152 KB)</a>
+       <br><br>
+       <a href="#">Checklist to protect children’s privacy when using AI (PDF, 187 KB)</a>
+       <br><br>
+       <a href="#">Checklist to protect children’s privacy when using AI - low ink version (PDF, 169 KB)</a>
+      </p>
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}
