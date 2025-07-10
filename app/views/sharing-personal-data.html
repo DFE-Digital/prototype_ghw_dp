@@ -1,0 +1,489 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – Using CCTV in schools
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #d2e2f1;margin: 0;margin-left: -5px; color: #1d70b8;box-shadow: none;">
+            <svg class="gem-c-search__icon" width="18" height="18" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-4  govuk-!-static-margin-bottom-2" style="font-size: 1rem;"><a href="../" class="govuk-breadcrumbs__link">Back to contents</a></p>
+<hr class="govuk-section-break govuk-section-break--l govuk-!-static-margin-top-0 govuk-section-break--visible">
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-l" style="margin-left: 15px;">Sharing personal data</h1>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">Who you can share personal data with and what consent you need to get - for example, when publishing exam results, taking photos in school and for immunisation programmes.</p>
+
+       <p class="govuk-body">
+        To keep children and young people safe in school, you need to share information appropriately, so the correct decisions can be made to protect them.
+        <br><br>
+        You must have a compelling reason to share their personal data. Sharing children's data with third parties can expose them to unintended risks if not done properly. You should carry out a <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/data-protection-impact-assessments-dpias/what-is-a-dpia/#what1" target="_blank">data protection impact assessment</a> to assess any risk before sharing personal information about your pupils.
+        <br><br>
+        The Information Commissioner's Office website includes <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/" target="_blank">further guidance on data sharing</a>. Any data you share must comply with their <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-sharing/data-sharing-a-code-of-practice/" target="_blank">data sharing code of practice</a>.
+      </p>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-data-sharing">
+
+
+      <!-- Safeguarding -->
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-2">
+              Safeguarding
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-sharing-personal-data-content-2" class="govuk-accordion__section-content">
+          <p class="govuk-body">
+            To keep children safe and make sure they get the support they need, you can share information with other schools and children's social care teams. It's not usually necessary to ask for consent to share personal information for the purposes of safeguarding a child.
+            <br><br>
+            Your designated safeguarding lead will decide if personal data needs to be shared. They should make sure they record:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>who they're sharing that information with</li>
+            <li>why they're sharing the data</li>
+            <li>whether they have consent from the pupil, parent or carer</li>
+          </ul>
+          <p class="govuk-body">
+            Read <a href="https://www.gov.uk/government/publications/working-together-to-safeguard-children--2" target="_blank">working together to safeguard children</a> to find out more information about sharing a pupil's safeguarding file. You should also refer to the safeguarding section of <a href="https://www.gov.uk/government/publications/keeping-children-safe-in-education--2" target="_blank">keeping children safe in education</a>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sharing data with local authorities and government -->
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-3">
+              Sharing data with local authorities and government
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-sharing-personal-data-content-3" class="govuk-accordion__section-content">
+          <p class="govuk-body">
+            Occasionally, you may need to share personal information about your pupils with local authorities, other schools or children's services. For example:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>if a pupil shows signs of physical or mental abuse, you may need to pass this information on to children's services</li>
+            <li>another school may need to know which pupils will be at their sports day or on a joint school trip</li>
+          </ul>
+          <p class="govuk-body">
+            Sharing information can help provide appropriate services that safeguard and promote the welfare of children. The Data Protection Act 2018 and UK GDPR provides a framework to make sure that personal information is shared appropriately.
+            <br><br>
+            Before you share any data, you must:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>consider all the legal implications</li>
+            <li>check if you need permission to share the data</li>
+            <li>confirm who needs the data, what data is needed and what they'll use it for</li>
+            <li>make sure that you have the ability to share the specified data securely</li>
+            <li>check that the actions cannot be completed or verified without the data</li>
+          </ul>
+          <p class="govuk-body">
+            You also have a statutory requirement to share personal data about your pupils with DfE through the <a href="https://www.gov.uk/guidance/complete-the-school-census" target="_blank">school census</a>. You do not need to get consent from pupils, parents or carers to share this data with us. You should provide information about what data you share in your school's privacy notice. <a href="https://www.gov.uk/government/publications/data-protection-and-privacy-privacy-notices" target="_blank">Privacy notice model documents</a> suggest wording to explain to staff, parents, carers and pupils what data you're collecting and sharing.
+            <br><br>
+            Schools may also need to share personal data about their staff with the local authority.
+          </p>
+        </div>
+      </div>
+
+    <!-- Sharing data with other schools -->
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-4">
+              Sharing data with other schools
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-sharing-personal-data-content-4" class="govuk-accordion__section-content">
+          <p class="govuk-body">
+            If a pupil moves to another school, you should transfer their records to the new school. This includes the pupil's <a href="https://www.gov.uk/government/collections/common-transfer-file" target="_blank">common transfer file</a> and educational record. You must:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>make sure you transfer the data securely</li>
+            <li>transfer the record within 15 days of getting confirmation the pupil is registered at another school</li>
+            <li>be able to trace the record during the transfer</li>
+          </ul>
+          <p class="govuk-body">
+            To securely share and transfer pupil records, you could:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>use the <a href="https://www.gov.uk/guidance/school-to-school-service-how-to-transfer-information" target="_blank">school to school (S2S) system</a></li>
+            <li>send them to a named person using an encrypted email</li>
+            <li>ask your local authority to transfer them</li>
+            <li>deliver any paper records in person or ask the new school to collect them</li>
+          </ul>
+          <p class="govuk-body">
+            If you're organising a school trip with another school, you'll need to share data with them to confirm which pupils are going. You may also need to share details such as dietary requirements or medical information to make sure pupils are safe. Where you already have consent for the information, make sure this also covers sharing it.
+          </p>
+        </div>
+      </div>
+
+      <!-- What you need consent for -->
+      <div class="govuk-accordion__section">
+        <div class="govuk-accordion__section-header">
+          <h2 class="govuk-accordion__section-heading">
+            <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-5">
+              What you need consent for
+            </span>
+          </h2>
+        </div>
+        <div id="accordion-sharing-personal-data-content-5" class="govuk-accordion__section-content">
+          <p class="govuk-body">
+            Before sharing any personal data, you need to identify the lawful basis. This may be consent from the individual. There may be some circumstances where it may not be appropriate to ask for consent, however. For example:
+          </p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>if the individual cannot give consent</li>
+            <li>it's not reasonable to ask for consent</li>
+            <li>when there's a safeguarding concern</li>
+          </ul>
+          <p class="govuk-body" id="age-13">
+            You'll usually need to get the pupil's consent to share their data if they're aged 13 or over. If they're under 13, you must get consent from whomever holds parental responsibility for the child.
+            <br><br>
+            Guidance on <a href="https://www.gov.uk/government/publications/dealing-with-issues-relating-to-parental-responsibility/understanding-and-dealing-with-issues-relating-to-parental-responsibility" target="_blank">understanding and dealing with issues relating to parental responsibility</a> is also available. The Information Commissioner's Office has guidance to help you understand a <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/childrens-information/children-and-the-uk-gdpr/what-rights-do-children-have/" target="_blank">child's rights over their personal data</a>.
+          </p>
+          <h3 class="govuk-heading-s">How to get consent</h3>
+          <p class="govuk-body">
+            You can get consent in different ways. It must be clear that the individual agrees to share their personal data and understands what they're agreeing to. Do not use pre-ticked boxes or add disclaimers that by not responding they are agreeing to share their data. You should keep a record of:
+          </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the consent</li>
+        <li>when you got the consent</li>
+        <li>how you got the consent – for example, keeping the letter you sent to parents or carers</li>
+      </ul>
+      <p class="govuk-body">
+        When getting consent, you need to explain:
+      </p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>what personal information you're sharing</li>
+        <li>why you're sharing it</li>
+        <li>who you're sharing it with and what they'll use it for</li>
+        <li>how you'll share their information</li>
+        <li>the process for withdrawing consent</li>
+      </ul>
+      <p class="govuk-body">
+        Any letters you send to parents or carers that ask for a reply slip that includes personal data should have a data protection statement. This could mean linking to a privacy notice or including information within the letter.
+        <br><br>
+        If you're asking for consent from a pupil aged 13 or over, you must write your request so they can understand it and are clear about what they're agreeing to.
+      </p>
+         <!-- CTA block -->
+          <div class="cta-block">
+            <p class="govuk-body">
+        Download an <a href="https://assets.publishing.service.gov.uk/media/63bee84fe90e0771b49f1cba/Example_template_for_a_letter_to_parents_and_carers.docx" target="_blank">example template for a letter to parents and carers about consent</a>.
+            </p>
+        </div>
+      
+      <h3 class="govuk-heading-s">Case study: ensuring data subjects have their rights respected when using biometric data</h3>
+          <p class="govuk-body">
+        If you use pupils' biometric data as part of an automated biometric recognition system, such as using fingerprints to receive school meals instead of paying with cash, you must comply with the requirements of the Protection of Freedoms Act 2012.
+        <br><br>
+        That means following these steps.
+          </p>
+          <ol class="govuk-body steps">
+          <li>
+            <p>In accordance with the child's age or capacity, get written consent from at least one parent or carer before you take and process any biometric data from their child. See the section on <a href="#age-13" data-ga4-index="{&quot;index_link&quot;: 4}">consent over age of 13</a>.</p>
+          </li>
+          <li>
+            <p>Provide an alternative means to access the relevant services for any pupil from whom you do not have consent. For example, pupils must be able to pay for school meals using cash at each transaction, if they wish.</p>
+          </li>
+          <li>
+            <p>Delete any relevant data already captured, if a parent or carer withdraws their consent.</p>
+          </li>
+        </ol>
+        <p class="govuk-body">
+          If a pupil does not want their biometric data processed, you must not process it even if their parent or carer has given consent. This is required by law.
+          <br><br>
+          You also need to get consent from any staff members using the school's biometric system. Staff can withdraw their consent at any time and you must then delete any relevant data already captured.
+          <br><br>
+          Guidance is available on <a href="https://www.gov.uk/government/publications/protection-of-biometric-information-of-children-in-schools" target="_blank">protecting children's biometric information in school</a>.
+        </p>
+        </div>
+      </div>
+
+     
+
+<!-- Taking and using photos in school -->
+  <div class="govuk-accordion__section">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-8">
+          Taking and using photos in school
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-sharing-personal-data-content-8" class="govuk-accordion__section-content">
+      <p class="govuk-body">
+        Schools use photos for various reasons including educational purposes, marketing or record keeping. It is important to use photos responsibly to protect pupils' privacy. Before taking and publishing pictures, check the permissions given by pupils, parents, and carers.
+        <br><br>
+        Do not publish photos of pupils who should not be publicly identified, such as those with safeguarding concerns or under court orders. If unsure, consult your school's safeguarding lead.
+      </p>
+
+      <h3 class="govuk-heading-s">Lawful basis</h3>
+      <p class="govuk-body">
+        Under data protection legislation, photos of identifiable individuals are considered <a href="../what-data-protection-means-for-schools#personal-data" target="_blank">personal data</a>. You must have a valid <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/public-task/" target="_blank">lawful basis</a> before taking and using photos in schools. 
+      <br><br>
+         Many schools collect parental consent for using photos at the start of the school year. This helps record preferences but doesn't always mean you can rely on that consent for all future processing. If you plan to use photos for a new or different reason, check if the consent applies. If not, you may need to rely on a different lawful basis.
+      </p>
+
+      <!-- Example block -->
+            <div class="example-block">
+              <h3 class="govuk-heading-s">Example: Legitimate interest</h3>
+              <p class="govuk-body">
+                You may rely on the <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/lawful-basis-interactive-guidance-tool/" target="_blank">lawful basis of legitimate interest</a> when using photos of pupils in a school prospectus or for marketing. Ensure this use is necessary, fair and respects pupil’s rights.
+                <br><br>
+                Before you start, complete a <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/accountability-and-governance/accountability-framework/records-of-processing-and-lawful-basis/legitimate-interest-assessment-lia/" target="_blank">legitimate interest assessment</a> to ensure that your use of photos is lawful and respects individuals’ rights. You should seek permission from parents, carers or pupils for before using their image. This is different from consent under data protection law.
+                <br><br>
+                You must provide a clear way for parents, carers and pupils to opt out of photo use. Explain how they can opt out when the photo is taken and how to change their mind later.
+              </p>
+              <p class="govuk-body"><b>What does opt out look like?</b></p>
+               
+               <ul class="govuk-list govuk-list--bullet">
+                  <li>A parent gives permission to use their child’s photo for the school website but later asks you not to use it. You should remove the image from your website and ensure it is not used again. </li>
+                  <li>A pupil withdraws permission after a printed prospectus is distributed. While you cannot undo the printing, you can stop using the image in future editions or online.</li>
+                </ul>
+               <p class="govuk-body">
+                 Your <a href="../data-protection-policies-and-procedures" target="_blank">privacy notices</a> must clearly explain how to opt out. 
+              </p>
+            </div>
+
+        <!-- Example block -->
+        <div class="example-block">
+          <h3 class="govuk-heading-s">Example: Public task</h3>
+          <p class="govuk-body">
+            You may rely on the <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/public-task/" target="_blank">public task as a lawful basis</a> to process photos for use in your identity management systems, as they are essential for carrying out your public duties.  Processing under public task allows pupils, parents, or carers to opt out of having their photos being used.
+            <br><br>
+            If a parent or pupil opts out of photo use, you must respect their wishes. Opt-out can be requested for many reasons for example, choice, privacy concerns or safeguarding issues.
+            <br><br>
+            Consider each opt out request carefully under the right to object in data protection law. The Information Commissioner’s Office’s (ICO) <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-object/" target="_blank">Right to Object guidance</a> contains more information on handling these requests. 
+          </p>
+        </div>
+
+        <h3 class="govuk-heading-s">Consent as a lawful basis</h3>
+        <p class="govuk-body">
+          You should not confuse consent under data protection law with permission. Consent must be clear, specific, informed and freely given. Parents, carers, or pupils must take a clear action to agree and must be able to withdraw consent at any time. Permission alone may not meet the standard of consent specified in data protection legislation and should not be relied on as a lawful basis for personal data.
+          <br><br>
+          You can permission to use an image, even if you rely on a different lawful basis (see legitimate interest section). 
+          <br><br>
+          If you are unsure which lawful basis is appropriate, the ICO’s <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/lawful-basis-interactive-guidance-tool/" target="_blank">lawful basis checker</a> can help you in your decision making.  
+        </p>
+            
+
+         <h3 class="govuk-heading-s">Transparency</h3>
+        <p class="govuk-body">
+          You should publish a clear photo policy alongside your school’s privacy notice. Your privacy notice must explain:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>how your school uses photos</li>
+          <li>where they will be published</li>
+          <li>how long they will be kept</li>
+        </ul>
+        <p class="govuk-body">
+          Photos must be stored securely and disposed of in line with your <a href="../record-keeping-and-management">data retention policy</a>. 
+          <br><br>
+          If you rely on consent, you must keep records of who gave consent, when they gave it, how they gave it, and what they were told.
+          <br><br>
+          The ICO provides further guidance on <a href="https://ico.org.uk/for-organisations/advice-for-small-organisations/whats-new/blogs/taking-photographs-data-protection-advice-for-schools/" target="_blank">taking photos in school</a>.
+        </p>
+
+            
+  
+
+
+
+        <!-- CTA block -->
+          <div class="cta-block">
+            <p class="govuk-body">
+       Download an <a href="https://assets.publishing.service.gov.uk/media/63bee84fe90e0771b49f1cba/Example_template_for_a_letter_to_parents_and_carers.docx" target="_blank">example template for a letter to parents and carers about consent</a>. This includes a section on taking and using photos of pupils in school.
+            </p>
+        </div>
+        
+      
+    </div>
+  </div>
+
+      <!-- Publishing exam results -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-9">
+                Publishing exam results
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-sharing-personal-data-content-9" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              UK GDPR does not stop schools from publishing exam results online or in the local press.
+              <br><br>
+              You do not need to get consent from pupils, parents or carers to publish exam results. However, you should tell pupils where and how their results will be published before they're published. This gives them an opportunity to ask you to remove their results from the list should they wish to.
+              <br><br>
+              The Information Commissioner's Office has more information about <a href="https://ico.org.uk/for-the-public/schools/exam-results/#:~:text=In%20general%2C%20because%20a%20school,have%20the%20right%20to%20object." target="_blank">exam results and data protection</a>.
+            </p>
+          </div>
+        </div>
+
+        <!-- School immunisation programmes -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-10">
+                School immunisation programmes
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-sharing-personal-data-content-10" class="govuk-accordion__section-content">
+            <p class="govuk-body">
+              You will need to provide data to support immunisation programmes in your school. This includes:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>sharing information leaflets and consent forms with parents or carers</li>
+              <li>providing a list of eligible children and young people, and their parent's or carer's contact details to the School Age Immunisation Service (SAIS) team</li>
+            </ul>
+            <p class="govuk-body">
+              Sharing these contact details does not mean that a vaccine will be given. A parent or carer will need to give their consent for a vaccine to be given to their child.
+              <br><br>
+              There is a lawful basis for you to share information with school immunisation teams under article 6(1)(e) of UK GDPR. This states that the information can be shared if “processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller ”.
+              <br><br>
+              This means that the school can share this information with immunisation programmes as it is in the public interest.
+              <br><br>
+              Sharing information with immunisation programmes is part of the exercise of a school's official authority. Schools also have a duty to support wider public health.
+              <br><br>
+              Data protection laws do not prevent you from sharing personal data where it is appropriate to do so in a fair and lawful way, and in this instance it is beneficial to do so.
+            </p>
+          </div>
+        </div>
+
+        <!-- Using CCTV in schools -->
+        <div class="govuk-accordion__section">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-sharing-personal-data-heading-11">
+                Using CCTV in schools
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-sharing-personal-data-content-11" class="govuk-accordion__section-content">
+            <p class="govuk-body">Schools need to carefully consider the necessity, purpose, and privacy implications before installing CCTV systems.</p>
+
+            <p class="govuk-body">
+              Many schools already use CCTV to enhance the safety and security of sites and to protect pupils, staff and visitors. The use of CCTV in schools must comply with data protection law because it captures images of people, which counts as <a href="../what-data-protection-means-for-schools#personal-data" target="_blank">personal data</a>.
+              <br><br>
+              Your use of CCTV must comply with data protection legislation and other relevant legal requirements including:
+            </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the Freedom of Information Act 2000</li>
+                <li>the Protection of Freedoms Act 2012</li>
+                <li>the Human Rights Act 1998</li>
+                <li>the Surveillance Camera Code of Practice</li>
+              </ul>
+
+              <h3 class="govuk-heading-s">Before installing CCTV</h3>
+              <p class="govuk-body">
+              You must clearly define the purpose for its use and assess whether CCTV is the most effective option for your school’s needs and must explore less intrusive alternatives. You should only install cameras where there is a clear need, ensuring their use is justified, proportionate and respects people’s privacy.
+              <br><br>
+              You should think carefully about the types of technology your CCTV system will use. Avoid CCTV with live facial recognition technology. This is because it uses sensitive biometric data which poses a high risk to the rights and freedoms of pupils, staff and visitors. You would need a very strong justification for using it, which is unlikely to apply in most schools.  
+              <br><br>
+              You should also consider completing a <a href="../data-protection-policies-and-procedures#accordion-default-heading-4" target="_blank">Protection Impact Assessment (DPIA)</a> before installing CCTV to safeguard the privacy of pupils, staff and visitors. Consult your school’s Data Protection Officer before deciding where to place cameras. They can help ensure your plans meet your data protection and safeguarding responsibilities. 
+              <br><br>
+              If you decide to install CCTV you must:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>consult with pupils, parents and staff</li>
+                <li>explain where the cameras will be and what the footage will be used for</li>
+              </ul>
+
+              <h3 class="govuk-heading-s">Transparency</h3>
+              <p class="govuk-body">
+               You must be open and honest about your use of CCTV.
+               <br><br>
+               This means:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>placing signs where CCTV is in use</li>
+                <li>updating your privacy notices, telling staff what you are using CCTV for and; how long footage will be kept and who it may be shared with</li>
+              </ul>
+               <p class="govuk-body">
+               You must ensure there are signs in place and clearly visible to inform people that CCTV is in use and explain its purpose.  
+              </p>
+
+              <h3 class="govuk-heading-s">Record keeping</h3>
+              <p class="govuk-body">
+              You must have clear processes for reviewing and managing CCTV footage. Only staff who are trained and authorised should be able to access it, and it must be deleted securely in line with your retention policy
+              <br><br>
+              Your <a href="../dealing-with-subject-access-requests-sars" target="_blank">subject access request</a> policy should cover CCTV, as people can ask to see footage you have recorded of them. You must respond to requests within one calendar month of receiving the request.
+              <br><br>
+              <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/cctv-and-video-surveillance/" target="_blank">The Information Commissioner’s Office (ICO)</a> has further guidance on data protection requirements for CCTV. 
+              </p>
+
+
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,313 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – What data protection means for schools
+{% endblock %}
+
+{% block content %}
+
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #d2e2f1;margin: 0;margin-left: -5px; color: #1d70b8;box-shadow: none;">
+            <svg class="gem-c-search__icon" width="18" height="18" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents -->
+<p class="govuk-body  govuk-!-static-margin-top-4  govuk-!-static-margin-bottom-2" style="font-size: 1rem;"><a href="../" class="govuk-breadcrumbs__link">Back to contents</a></p>
+<hr class="govuk-section-break govuk-section-break--l govuk-!-static-margin-top-0 govuk-section-break--visible">
+
+<!-- Content -->
+<main class="govuk-main-wrapper govuk-!-static-padding-top-0 ">
+  <div class="govuk-grid-row">
+    <h1 class="govuk-heading-l" style="margin-left: 15px;">What data protection means for schools</h1>
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body-l">Data protection legislation, and who and what it’s intended to protect.</p>
+
+      <p class="govuk-body">
+        Good data protection practices ensure that an organisation and the individuals within it can be trusted to collect, store and use our personal data fairly, safely and lawfully.
+      </p>
+
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                
+        <!-- Data protection law -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Data protection law
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                All those who process others’ personal data have to follow strict rules. 
+                <br><br>
+                These rules are set primarily by: 
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the UK General Data Protection Regulation (UK GDPR)</li>
+                <li>the Data Protection Act 2018 (DPA)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Data protection principles -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Data protection principles
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                The UK GDPR sets out 7 key principles that should guide you in processing personal data. 
+                <br><br>
+                Those principles are:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>lawfulness, fairness and transparency</li>
+                <li>purpose limitation</li>
+                <li>data minimisation</li>
+                <li>accuracy</li>
+                <li>storage limitation</li>
+                <li>integrity and confidentiality (security)</li>
+                <li>accountability</li>
+              </ul>
+              <p class="govuk-body">
+                You can read more about the personal data processing principles on the website of the Information Commissioner’s Office (ICO). The ICO is the independent body that upholds the UK’s information rights.
+              </p>
+            </div>
+          </div>
+
+          <!-- Personal data -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Personal data
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                Personal data is information that relates to an identified or identifiable living individual.
+                <br><br>
+                In a school, examples of personal data include:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>identity details (for example, a name, title or role)</li>
+                <li>contact details (for example, an address or a telephone number)</li>
+                <li>information about pupil behaviour and attendance</li>
+                <li>assessment and exam results</li>
+                <li>staff recruitment information</li>
+                <li>staff contracts</li>
+                <li>staff development reviews</li>
+                <li>staff and pupil references</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Special category data -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Special category data
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                Special category data is personal data that’s considered more sensitive and given greater protection in law.
+                <br><br>
+                Special category data includes:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>racial or ethnic origin</li>
+                <li>political opinions</li>
+                <li>religious or philosophical beliefs</li>
+                <li>trade-union membership</li>
+                <li>genetic information</li>
+                <li>biometric information (for example, a fingerprint)</li>
+                <li>health matters (for example, medical information)</li>
+                <li>sexual matters or sexual orientation</li>
+              </ul>
+              <p class="govuk-body">
+                In a school, it would be best practice to also treat as special category data any personal data about:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>a safeguarding matter</li>
+                <li>pupils in receipt of pupil premium</li>
+                <li>pupils with special educational needs and disability (SEND)</li>
+                <li>children in need (CIN)</li>
+                <li>children looked after by a local authority (CLA)</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Criminal offence data -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Criminal offence data
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                Criminal offence data is personal data that’s treated in a similarly sensitive way to special category data. It records criminal convictions and offences or related security measures.
+                <br><br>
+                Criminal offence data includes:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>the alleged committing of an offence</li>
+                <li>the legal proceedings for an offence that was committed or alleged to have been committed, including sentencing</li>
+              </ul>
+              <p class="govuk-body">
+                Schools process criminal offence data in storing the outcome of a Disclosure and Barring Service (DBS) check on their employees, non-employed staff and volunteers. As this data relates to criminal convictions, collecting and retaining it means the school is processing criminal offence data. This applies even though the check has not revealed any conviction.
+                <br><br>
+                You can read about handling DBS data in the statutory guidance on keeping children safe in education.
+              </p>
+            </div>
+          </div>
+
+          <!-- Data subjects -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Data subjects
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                Schools collect, store and use personal data about a variety of individuals. In this context, those individuals are known as data subjects.
+                <br><br>
+                A school’s data subjects include:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>pupils and former pupils</li>
+                <li>parents and carers</li>
+                <li>employees and non-employed staff</li>
+                <li>governors and trustees</li>
+                <li>local-authority personnel</li>
+                <li>volunteers, visitors and applicants</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Data assets -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Data assets
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                Schools hold personal data in several forms. These are collectively known as its data assets.
+                <br><br>
+                Data assets comprise:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>data items – single pieces of information</li>
+                <li>data item groups – data items about the same process</li>
+                <li>data sets – collections of related data that can be manipulated as a unit by a computer</li>
+                <li>systems – administrative software</li>
+                <li>system groups – the larger systems housing administrative software</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Personal data breaches -->
+          <div class="govuk-accordion__section">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button">
+                  Personal data breaches
+                </span>
+              </h2>
+            </div>
+            <div class="govuk-accordion__section-content">
+              <p class="govuk-body">
+                A data breach is a security incident that results in personal data a school holds being:
+              </p>
+              <ul class="govuk-list govuk-list--bullet">
+                <li>lost or stolen</li>
+                <li>destroyed without consent</li>
+                <li>changed without consent</li>
+                <li>accessed by someone without permission</li>
+              </ul>
+              <p class="govuk-body">
+                Data breaches can be deliberate or accidental. A breach is about more than just losing personal data.
+              </p>
+            </div>
+          </div>
+        
+
+     
+      
+        <!-- End Accordian -->
+      </div> 
+  </div>
+</main>
+
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+{% endblock %}
