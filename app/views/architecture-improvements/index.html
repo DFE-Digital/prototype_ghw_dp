@@ -1,0 +1,150 @@
+{% extends "layouts/main.html" %}
+
+{% set pageName="Home" %}
+
+{% block pageTitle %}
+  {{ serviceName }} – GOV.UK
+{% endblock %}
+
+{% block content %}
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs" style="margin-top: -28px;">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education">Education, training and skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/education/running-and-managing-a-school">Running and managing a school</a>
+    </li>
+  </ol>
+</div>
+
+<!-- Blue header with search -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main" style="background-color: #1d70b8;padding:30px 10px;">
+    <div class="govuk-grid-row" style="margin: 0;">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l" style="color: #ffffff;padding-bottom: 18px;">{{ serviceName }}</h1>
+        <p class="govuk-body" style="color: #ffffff;font-size: 1rem;line-height: 1.6;">
+          From: <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">Department for Education</a>
+          <br>Published 3 February 2023
+          <br>Updated: {{lastUpdated}} - <a class="govuk-link" style="color: #ffffff;font-weight: bold;" href="#">See all updates</a>
+        </p>
+        <p class="govuk-body" style="color: #ffffff;">
+        </p>
+
+        <div class="govuk-form-group govuk-!-static-margin-top-8">
+          <input class="govuk-input govuk-!-width-three-quarters" id="event-name" name="eventName" type="text" placeholder="Search this manual" style="margin: 0;border: 0;position: relative;z-index: 1;">
+          <button type="submit" class="govuk-button" data-module="govuk-button" style="background-color: #d2e2f1;margin: 0;margin-left: -5px; color: #1d70b8;box-shadow: none;">
+            <svg class="gem-c-search__icon" width="18" height="18" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+              <circle cx="12.0161" cy="11.0161" r="8.51613" stroke="currentColor" stroke-width="3"></circle>
+              <line x1="17.8668" y1="17.3587" x2="26.4475" y2="25.9393" stroke="currentColor" stroke-width="3"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Contents
+<p class="govuk-body  govuk-!-static-margin-top-3  govuk-!-static-margin-bottom-3" style="font-size: 1rem;">Contents</p>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-6 "> -->
+
+<!-- Content -->
+<h2 class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold" style="margin-top:20px">Summary</h2>
+<p class="govuk-body-l" style="max-width: 30em;">How maintained schools, academies and trusts can protect personal data, comply with data protection law and respond to data protection issues.</p>
+<p class="govuk-body">This guidance is for everyone who works in a maintained school or academy, including school leaders, governors, trustees, data protection officers (DPOs), and all staff who handle personal data. Independent schools may also find it useful.<br><br>All staff have a responsibility to protect personal data. They should:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>understand the basics of data protection</li>
+  <li>handle personal information appropriately</li>
+  <li>know what to do if something goes wrong</li>
+</ul>
+<p class="govuk-body">DPOs and data protection leads have additional responsibility for overseeing compliance and supporting good practice across the school or trust.<br><br>Where staff are unsure, they should follow their school’s policies and procedures or seek advice from their line manager or DPO.</p>
+
+<!-- CTA block -->
+  <div class="cta-block">
+    <p class="govuk-body">
+      <b>Have your say</b><br><br>
+      If you’d like to be involved in user research to help the Department for Education improve our data protection guidance for schools, <a href="https://forms.office.com/e/3hR2xDn652">register your interest</a>.
+    </p>
+</div>
+
+<h2 class="govuk-body govuk-!-font-size-27 govuk-!-font-weight-bold" style="margin-top:20px">Contents</h2>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="what-data-protection-means-for-schools">Understanding data protection in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">How data protection law applies in schools and the types of personal data schools process.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="#">Lawful basis for using personal data</a>
+<p class="govuk-body govuk-!-static-margin-top-2">The lawful bases and conditions schools can use to collect, use and share personal data.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="#">Roles and responsibilities for data protection</a>
+<p class="govuk-body govuk-!-static-margin-top-2">The roles and responsibilities for managing data protection in schools and trusts.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="#">Managing data protection policies and processes</a>
+<p class="govuk-body govuk-!-static-margin-top-2">How schools should manage data protection policies, records, retention, privacy notices and impact assessments.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="#">Sharing personal data safely</a>
+<p class="govuk-body govuk-!-static-margin-top-2">How schools can share personal data lawfully, safely and appropriately.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="data-protection-policies-and-procedures">Taking and using photos and videos, and using CCTV in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">Data protection considerations when taking and using photos and videos, or when using CCTV.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="sharing-personal-data">Dealing with subject access requests (SARs)</a>
+<p class="govuk-body govuk-!-static-margin-top-2">A subject access request (SAR) is a type of information rights request. A SAR lets people access a copy of the personal data a school holds about them or someone they have parental responsibility for.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="dealing-with-subject-access-requests-sars">Dealing with other information rights requests</a>
+<p class="govuk-body govuk-!-static-margin-top-2">People have rights over how their personal data is used, including the right to correct, erase or restrict personal data.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="information-rights-requests-relating-to-personal-data">Managing personal data breaches</a>
+<p class="govuk-body govuk-!-static-margin-top-2">A personal data breach is a security incident that affects the confidentiality, integrity or availability of personal data.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="record-keeping-and-management">Generative artificial intelligence (AI) and data protection in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">How to address the potential data protection risks of using generative AI in schools.</p>
+
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="#">Resources to support data protection in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">Download resources to help with data protection in schools, including posters, templates, and learning materials.</p>
+<!-- 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="generative-artificial-intelligence-ai-and-data-protection-in-schools">Data protection and generative artificial intelligence (AI) in education settings</a>
+<p class="govuk-body govuk-!-static-margin-top-2">The benefits and potential data protection risks of using generative AI in educational settings.</p> -->
+<!-- 
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="using-cctv-in-schools">Using CCTV in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">Schools need to carefully consider the necessity, purpose, and privacy implications before installing CCTV systems.</p> -->
+
+<!-- <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible  govuk-!-static-margin-top-0 govuk-!-static-margin-bottom-3 ">
+<a class="govuk-link" style="font-weight: bold;font-size:1.2rem;" href="resources-to-support-data-protection-in-schools">Resources to support data protection in schools</a>
+<p class="govuk-body govuk-!-static-margin-top-2">Download resources to help with data protection in schools, including posters, templates, and learning materials.</p> -->
+
+<!-- Print button -->
+<button type="submit" class="govuk-button govuk-button--inverse" style="border: 1px solid #b1b4b6;box-shadow: none;font-size: 16px;display: flex;align-items: center;padding:10px" data-module="govuk-button">
+  <img src="/public/images/icon-print.png" style="width:16px;">
+  <span style="margin: 0px 0px 0px 10px;">Print this page</span>
+</button>
+
+
+
+
+
+
+
+{% endblock %}
+
