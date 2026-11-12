@@ -8,7 +8,10 @@
     padding-bottom: 0;
   }
 
-
+//logo fix
+svg.govuk-header__logotype {
+    fill: #ffffff;
+}
 
 // Feedback
 .govuk-body.feedback{
